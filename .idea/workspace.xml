@@ -4,62 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AircraftBattle.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xf/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/bg1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/bg2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/bg3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/bg4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/bg5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/boss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/boss2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ep15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/explode/e9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/fire.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/game_music.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/girl4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/hero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/qq.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/score.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/shell.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/space.jpg" afterDir="false" />
+    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="初始化仓库">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xf/jf/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xf/main/GameWin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/bg1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/bg2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/bg3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/bg4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/bg5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/boss.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/boss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/boss2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/boss2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/bullet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep04.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep05.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep06.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep07.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep07.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep08.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep08.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep09.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep09.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep10.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep11.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep12.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep13.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep14.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/ep15.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/ep15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e10.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e10.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e11.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e11.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e12.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e12.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e13.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e13.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e14.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e14.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e15.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e15.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e4.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e5.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e5.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e6.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e6.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e7.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e7.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e8.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e8.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/explode/e9.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/explode/e9.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/fire.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/fire.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/game_music.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/game_music.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/girl4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/girl4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/hero.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/hero.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/qq.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/qq.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/score.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/score.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/shell.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/shell.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/space.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/space.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,31 +83,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xiaoliu/IdeaProjects/AircraftBattle/AircraftBattle/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xiaoliu/IdeaProjects/AircraftBattle/AircraftBattle/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src" />
       <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src\com\xf\imgs" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xf.Login" />
+  <component name="RunManager" selected="Application.GameWin">
+    <configuration name="GameWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xf.main.GameWin" />
       <module name="AircraftBattle" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xf.*" />
+          <option name="PATTERN" value="com.xf.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.xf.jf.Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xf.jf.Login" />
+      <module name="AircraftBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xf.jf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,7 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Login" />
+        <item itemvalue="Application.GameWin" />
+        <item itemvalue="Application.com.xf.jf.Login" />
       </list>
     </recent_temporary>
   </component>
@@ -131,8 +148,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655689597183</updated>
-      <workItem from="1655689599312" duration="2682000" />
+      <workItem from="1655689599312" duration="3115000" />
+      <workItem from="1655693172620" duration="1599000" />
+      <workItem from="1655694801348" duration="13000" />
+      <workItem from="1655694828909" duration="132000" />
+      <workItem from="1655695216807" duration="793000" />
+      <workItem from="1655706734064" duration="7177000" />
+      <workItem from="1655715130942" duration="2646000" />
+      <workItem from="1655718185608" duration="3000" />
+      <workItem from="1655720145170" duration="374000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化仓库">
+      <created>1655692599640</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655692599640</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,5 +181,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始化仓库" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化仓库" />
   </component>
 </project>
