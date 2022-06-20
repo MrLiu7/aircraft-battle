@@ -59,7 +59,7 @@ public class Login extends JFrame {
 
         //设置背景
         JLabel bgImg = new JLabel();
-        bgImg.setIcon(new ImageIcon(Objects.requireNonNull(this.getClass().getResource("../img/bg2(1).png"))));
+        bgImg.setIcon(new ImageIcon(Objects.requireNonNull(this.getClass().getResource("../img/bg2.jpg"))));
         bgImg.setBounds(0, 0, 450, 400);
         panel.add(bgImg);
 
