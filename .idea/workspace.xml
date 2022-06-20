@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="初始化仓库">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/mailTest/lib/activation.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/mailTest/lib/javax.mail.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/mailTest/mailtest/SendMessages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/mailTest/mailtest/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/webtest/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/webtest/DesktopTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/webtest/注册页面.html" afterDir="false" />
+    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="新增邮箱验证码和网页跳转测试代码，还差集成到项目中。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AircraftBattle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AircraftBattle.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +136,7 @@
       <workItem from="1655718185608" duration="3000" />
       <workItem from="1655720145170" duration="374000" />
       <workItem from="1655720779003" duration="3257000" />
-      <workItem from="1655725846593" duration="7006000" />
+      <workItem from="1655725846593" duration="8276000" />
     </task>
     <task id="LOCAL-00001" summary="初始化仓库">
       <created>1655692599640</created>
@@ -161,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655724029310</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新增邮箱验证码和网页跳转测试代码，还差集成到项目中。">
+      <created>1655735913583</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655735913583</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +178,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化仓库" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化仓库" />
+    <MESSAGE value="新增邮箱验证码和网页跳转测试代码，还差集成到项目中。" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增邮箱验证码和网页跳转测试代码，还差集成到项目中。" />
   </component>
 </project>

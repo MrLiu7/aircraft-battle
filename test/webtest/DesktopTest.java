@@ -25,7 +25,7 @@ public class DesktopTest extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 Desktop desktop = Desktop.getDesktop();
                 try {
-                    desktop.browse(new URI("http://localhost:63342/AircraftBattle/webtest/%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2.html?_ijt=6n0rsopqrp80o9hpgr5mte0pck&_ij_reload=RELOAD_ON_SAVE"));
+                    desktop.browse(new URI("http://8.130.8.244/"));
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
                 } catch (URISyntaxException ex) {
