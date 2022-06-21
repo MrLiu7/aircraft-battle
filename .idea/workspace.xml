@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="新增邮箱验证码和网页跳转测试代码，还差集成到项目中。">
+    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="初始化仓库">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xf/obj/BgObj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xf/obj/GameObj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xf/utils/GameUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/bg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/img/bg2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/jf/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/jf/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/main/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/main/GameWin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/mailTest/mailtest/SendMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/mailTest/mailtest/SendMessages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/webtest/DesktopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/webtest/DesktopTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,64 +40,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/MyProjects/javaProjects/IDEAProject/AircraftBattle/test/mailTest/lib",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xiaoliu/IdeaProjects/AircraftBattle/AircraftBattle/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\MyProjects\javaProjects\IDEAProject\AircraftBattle\test\mailTest\lib" />
-      <recent name="F:\MyProjects\javaProjects\IDEAProject\AircraftBattle\test\webtest" />
       <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src" />
       <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src\com\xf\imgs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DesktopTest">
+  <component name="RunManager" selected="Application.com.xf.jf.Login">
     <configuration name="DesktopTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="webtest.DesktopTest" />
       <module name="AircraftBattle" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="webtest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xf.main.GameWin" />
-      <module name="AircraftBattle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xf.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mailTest.mailtest.Test" />
-      <module name="AircraftBattle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mailTest.mailtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +90,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.xf.main.GameWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xf.main.GameWin" />
+      <module name="AircraftBattle" />
+      <option name="VM_PARAMETERS" value="-Dfile.encoding=gbk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xf.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.com.xf.jf.Login" />
+      <item itemvalue="Application.DesktopTest" />
+      <item itemvalue="Application.com.xf.main.GameWin" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DesktopTest" />
-        <item itemvalue="Application.Test" />
         <item itemvalue="Application.com.xf.jf.Login" />
-        <item itemvalue="Application.GameWin" />
+        <item itemvalue="Application.com.xf.main.GameWin" />
+        <item itemvalue="Application.DesktopTest" />
       </list>
     </recent_temporary>
   </component>
@@ -135,8 +134,6 @@
       <workItem from="1655715130942" duration="2646000" />
       <workItem from="1655718185608" duration="3000" />
       <workItem from="1655720145170" duration="374000" />
-      <workItem from="1655720779003" duration="3257000" />
-      <workItem from="1655725846593" duration="8276000" />
     </task>
     <task id="LOCAL-00001" summary="初始化仓库">
       <created>1655692599640</created>
@@ -145,21 +142,7 @@
       <option name="project" value="LOCAL" />
       <updated>1655692599640</updated>
     </task>
-    <task id="LOCAL-00002" summary="初始化仓库">
-      <created>1655724029310</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1655724029310</updated>
-    </task>
-    <task id="LOCAL-00003" summary="新增邮箱验证码和网页跳转测试代码，还差集成到项目中。">
-      <created>1655735913583</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1655735913583</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +161,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化仓库" />
-    <MESSAGE value="新增邮箱验证码和网页跳转测试代码，还差集成到项目中。" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增邮箱验证码和网页跳转测试代码，还差集成到项目中。" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化仓库" />
   </component>
 </project>

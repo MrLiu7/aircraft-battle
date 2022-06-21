@@ -35,6 +35,4 @@ public class DesktopTest extends JFrame {
         });
         desktopTest.add(button);
     }
-
-
 }

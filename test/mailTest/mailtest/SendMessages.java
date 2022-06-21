@@ -15,13 +15,13 @@ public class SendMessages {
         //填写SMTP服务器
         properties.put("mail.smtp.host", "smtp.qq.com");// 主机名 QQ邮箱
         //properties.put("mail.smtp.host", "smtp.163.com");
-        // QQ邮箱端口号587
-        //properties.put("mail.smtp.port", 25 );
-        properties.put("mail.smtp.port", 587 );
+        // QQ邮箱端口号587  网易端口25
+        properties.put("mail.smtp.port", 25 );
+        //properties.put("mail.smtp.port", 587 );
         //填写写信人账号
-        //TODO properties.put("mail.user", "发件人邮箱");
+        properties.put("mail.user", "liujijiwuhan@163.com");
         //填写16位写信人账号
-        //TODO properties.put("mail.password", "密匙");
+        properties.put("mail.password", "XKDLVNGJUAIFQRKH");
         //构建授权信息，用于进行SMTP进行身份验证
         Authenticator authenticator = new Authenticator() {
             @Override

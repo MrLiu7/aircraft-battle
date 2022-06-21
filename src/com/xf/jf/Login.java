@@ -5,6 +5,11 @@ import com.xf.main.GameWin;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Objects;
 
 public class Login extends JFrame {
@@ -47,7 +52,13 @@ public class Login extends JFrame {
 
         //登录按钮
         JButton userLogin = new JButton("登录");
-        userLogin.setBounds(200, 200, 60, 20);
+        userLogin.setBounds(200, 250, 60, 20);
+
+        //注册标签
+        JLabel register = new JLabel("没有账号，立即注册");
+        register.setFont(new Font("楷体",Font.BOLD,15));
+        register.setBounds(160,300,200,20);
+        register.setForeground(Color.BLACK);
 
 
         //面板添加用户名
@@ -56,11 +67,12 @@ public class Login extends JFrame {
         panel.add(usernameField);
         panel.add(passwordField);
         panel.add(userLogin);
+        panel.add(register);
 
         //设置背景
         JLabel bgImg = new JLabel();
         bgImg.setIcon(new ImageIcon(Objects.requireNonNull(this.getClass().getResource("../img/bg2.jpg"))));
-        bgImg.setBounds(0, 0, 450, 400);
+        bgImg.setBounds(0, 0, 500, 400);
         panel.add(bgImg);
 
 
@@ -83,6 +95,33 @@ public class Login extends JFrame {
                 }
             }
         });
+
+        //注册标签被点击
+        register.addMouseListener(new MouseAdapter() {
+            //鼠标单机
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                //CS端跳转BS端
+                Desktop desktop = Desktop.getDesktop();
+                try {
+                    desktop.browse(new URI("http://8.130.8.244/"));
+                } catch (IOException | URISyntaxException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+
+            //鼠标移入
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                register.setForeground(Color.CYAN);
+            }
+
+            //鼠标移除
+            @Override
+            public void mouseExited(MouseEvent e) {
+                register.setForeground(Color.BLACK);
+            }
+        });
     }
 
     public static void main(String[] args) {
@@ -93,7 +132,7 @@ public class Login extends JFrame {
         //设置窗口可见
         this.setVisible(true);
         //设置窗口大小
-        this.setSize(450, 400);
+        this.setSize(500, 400);
         //设置窗口可改变
         this.setResizable(false);
         //设置窗口位置居中
