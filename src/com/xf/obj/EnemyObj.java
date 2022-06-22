@@ -38,13 +38,16 @@ public class EnemyObj extends GameObj {
                 this.y = -200;
                 GameUtils.removeList.add(shellObj);
                 GameUtils.removeList.add(this);
+
+                //分数自增
+                GameWin.score += 2;
             }
         }
 
         //敌机和自己的飞机是否碰撞
-        if (this.getRec().intersects(this.gameWin.planeObj.getRec())){
+        if (this.getRec().intersects(this.gameWin.planeObj.getRec())) {
             //游戏结束标记
-            GameWin.state=3;
+            GameWin.state = 3;
         }
 
     }

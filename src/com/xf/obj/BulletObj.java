@@ -8,7 +8,7 @@ import java.awt.*;
 /**
  * 敌方子弹类
  */
-public class BulletObj extends GameObj{
+public class BulletObj extends GameObj {
     public BulletObj() {
         super();
     }
@@ -23,13 +23,16 @@ public class BulletObj extends GameObj{
 
     @Override
     public void paintSelf(Graphics g) {
-        super.paintSelf(g);
-        y+=speed;
+        //是否出现了100架飞机
+        if (GameWin.enemyCount > 10) {
+            super.paintSelf(g);
+            y += speed;
 
-        //敌方子弹是否与我方战机碰撞
-        if (this.getRec().intersects(this.gameWin.planeObj.getRec())){
-            //死亡
-            GameWin.state = 3;
+            //敌方子弹是否与我方战机碰撞
+            if (this.getRec().intersects(this.gameWin.planeObj.getRec())) {
+                //死亡
+                GameWin.state = 3;
+            }
         }
     }
 }

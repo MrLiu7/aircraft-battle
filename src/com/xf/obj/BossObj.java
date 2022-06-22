@@ -1,10 +1,13 @@
 package com.xf.obj;
 
 import com.xf.main.GameWin;
+import com.xf.utils.GameUtils;
 
 import java.awt.*;
 
 public class BossObj extends GameObj{
+    //BOSS生命值100
+    int life = 3;
     public BossObj() {
         super();
     }
@@ -19,10 +22,31 @@ public class BossObj extends GameObj{
 
     @Override
     public void paintSelf(Graphics g) {
-        super.paintSelf(g);
-        if (x<-50||x>500-100){
-            speed*=-1;
+        //是否出现了100架飞机
+        if (GameWin.enemyCount>10){
+            super.paintSelf(g);
+            if (x<-50||x>500-100){
+                speed*=-1;
+            }
+            x+=speed;
+
+            //检测己方战机是否击中敌方BOSS
+            for (ShellObj shellObj : GameUtils.shellObjList) {
+                if (this.getRec().intersects(shellObj.getRec())){
+                    //击中了，生命值自减
+                    --life;
+
+                    //击中的子弹要消失
+                    shellObj.setX(-200);
+                    shellObj.setY(-200);
+                    GameUtils.removeList.add(shellObj);
+                }
+
+                if (life<0){
+                    //游戏胜利
+                    GameWin.state = 4;
+                }
+            }
         }
-        x+=speed;
     }
 }

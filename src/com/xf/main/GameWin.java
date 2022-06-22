@@ -5,6 +5,8 @@ import com.xf.utils.GameUtils;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Objects;
@@ -33,13 +35,15 @@ public class GameWin extends JFrame implements Runnable {
     BgObj bgObj = new BgObj(GameUtils.bgImg, 0, -1800, 2);
 
     //游戏得分
-    int score = 0;
+    public static int score = 0;
+    //敌方小飞机数量
+    public static int enemyCount = 0;
 
     //我方飞机对象
-    public  PlaneObj planeObj = new PlaneObj(GameUtils.heroImg, 290, 550, 50, 41, 0, this);
+    public PlaneObj planeObj = new PlaneObj(GameUtils.heroImg, 290, 550, 50, 41, 0, this);
 
     //敌方Boss对象
-    public BossObj bossObj = new BossObj(GameUtils.bossImg,250,20,100,75,3,this);
+    public BossObj bossObj = new BossObj(GameUtils.bossImg, 250, 20, 100, 75, 3, this);
 
     //记录游戏重回次数（防止子弹重绘过快）初始化为 0
     int count = 1;
@@ -65,7 +69,7 @@ public class GameWin extends JFrame implements Runnable {
             gImage.drawImage(GameUtils.bgImg, 0, 0, width, height, null);
             gImage.drawImage(GameUtils.bossImg, 100, 100, 160, 110, null);
             gImage.drawImage(GameUtils.heroImg, 150, 600, 50, 40, null);
-            GameUtils.drawWord(gImage,"单 机 游 戏 开 始",Color.WHITE,30, 150, 300);
+            GameUtils.drawWord(gImage, "单 机 游 戏 开 始", Color.WHITE, 30, 150, 300);
         }
         //状态为游戏开始
         if (state == 1) {
@@ -76,11 +80,23 @@ public class GameWin extends JFrame implements Runnable {
             //移除要删除的元素
             GameUtils.gameObjList.removeAll(GameUtils.removeList);
         }
+        //游戏暂停
+        if (state==2){
+            System.out.println("暂停");
+            GameUtils.drawWord(gImage,"游 戏 暂 停",Color.MAGENTA,30,width/3,height/2);
+        }
         //死亡
         if (state == 3) {
-            gImage.drawImage(GameUtils.explodeImg,planeObj.getX()-10,planeObj.getY()-10,null);
-            GameUtils.drawWord(gImage,"游 戏 失 败",Color.RED,30,width/3,height/2);
+            gImage.drawImage(GameUtils.explodeImg, planeObj.getX() - 10, planeObj.getY() - 10, null);
+            GameUtils.drawWord(gImage, "游 戏 失 败", Color.RED, 30, width / 3, height / 2);
         }
+        //游戏胜利
+        if (state == 4) {
+            gImage.drawImage(GameUtils.explodeImg, bossObj.getX() - 10, bossObj.getY() - 10, null);
+            GameUtils.drawWord(gImage, "挑 战 成 功", Color.PINK, 30, width / 3, height / 2);
+        }
+        //绘制分数
+        GameUtils.drawWord(gImage, "当前得分 " + score, Color.GREEN, 20, 20, 60);
         g.drawImage(offScreenImage, 0, 0, null);
     }
 
@@ -117,6 +133,28 @@ public class GameWin extends JFrame implements Runnable {
             }
 
         });
+
+        //游戏暂停
+        this.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                //空格键
+                if (e.getKeyCode() == 32) {
+                    switch (state) {
+                        case 1:
+                            state = 2;
+                            break;
+                        case 2:
+                            state = 1;
+                            break;
+                        default:
+                    }
+                    System.out.println(state);
+                }
+            }
+        });
+
+        //while死循环之后不能放任何代码
         while (true) {
             //如果游戏状态等于1，创建素材
             if (state == 1) {
@@ -144,14 +182,17 @@ public class GameWin extends JFrame implements Runnable {
         }
 
         //敌方飞机对象 每重绘10次，生成一个敌方飞机
-        if (count % 10 == 0) {
+        if (count % 15 == 0) {
             GameUtils.enemyObjList.add(new EnemyObj(GameUtils.enemyImg, (int) (Math.random() * 10) * 50, 0, 71, 48, 3, this));
             GameUtils.gameObjList.add(GameUtils.enemyObjList.get(GameUtils.enemyObjList.size() - 1));
+
+            //敌方数量自增
+            ++enemyCount;
         }
 
         //敌方子弹对象 每重绘10次，生成一个子弹
-        if (count%30==0){
-            GameUtils.bulletList.add(new BulletObj(GameUtils.bulletImg, bossObj.getX()+76, bossObj.getY()+85,14,25,5,this));
+        if (count % 20 == 0) {
+            GameUtils.bulletList.add(new BulletObj(GameUtils.bulletImg, bossObj.getX() + 76, bossObj.getY() + 85, 14, 25, 5, this));
             GameUtils.gameObjList.add(GameUtils.bulletList.get(GameUtils.bulletList.size() - 1));
         }
     }

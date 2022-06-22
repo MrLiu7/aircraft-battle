@@ -7,8 +7,9 @@
     <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="更新文件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xf/main/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/main/GameWin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/PlaneObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/PlaneObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/utils/GameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/utils/GameUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/BossObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/BossObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/BulletObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/BulletObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/EnemyObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/EnemyObj.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +143,7 @@
       <workItem from="1655872123825" duration="1819000" />
       <workItem from="1655873975750" duration="934000" />
       <workItem from="1655874932535" duration="3871000" />
-      <workItem from="1655879655943" duration="6142000" />
+      <workItem from="1655879655943" duration="10165000" />
     </task>
     <task id="LOCAL-00001" summary="初始化仓库">
       <created>1655692599640</created>
@@ -179,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655885102963</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="更新文件">
+      <created>1655886077367</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655886077367</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +216,11 @@
           <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/xf/main/GameWin.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
