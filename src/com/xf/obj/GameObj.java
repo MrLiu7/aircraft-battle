@@ -47,7 +47,8 @@ public class GameObj {
 
     //重绘自身的方法
     public void paintSelf(Graphics g) {
-        g.drawImage(image, x, y, 500, 1200, null);
+        //g.drawImage(image, x, y, 500, 1200, null);
+        g.drawImage(image, x, y,null);
     }
 
     //获取自身矩形的方法，用于碰撞测试

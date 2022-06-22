@@ -92,7 +92,7 @@ public class Login extends JFrame {
                 } else {
                     JOptionPane.showMessageDialog(null, "登陆成功");
                     //启动游戏界面
-                    new GameWin().lunch();
+                    new Thread(new GameWin()).start();
                     that.setVisible(false);
                 }
             }

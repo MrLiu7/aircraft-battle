@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="更新文件">
-      <change afterPath="$PROJECT_DIR$/src/com/xf/obj/PlaneUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xf/img/bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xf/obj/EnemyObj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xf/obj/PlaneObj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xf/obj/ShellObj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/img/bg2.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xf/jf/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/jf/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/main/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/main/GameWin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xf/obj/BgObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/BgObj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xf/obj/GameObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/GameObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/PlaneUtils.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xf/utils/GameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/utils/GameUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +64,7 @@
       <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src\com\xf\imgs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.xf.jf.Login">
+  <component name="RunManager" selected="Application.com.xf.main.GameWin">
     <configuration name="DesktopTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="webtest.DesktopTest" />
       <module name="AircraftBattle" />
@@ -101,15 +105,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="AircraftBattle" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.test" />
       <item itemvalue="Application.com.xf.jf.Login" />
       <item itemvalue="Application.DesktopTest" />
       <item itemvalue="Application.com.xf.main.GameWin" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.xf.jf.Login" />
         <item itemvalue="Application.com.xf.main.GameWin" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.com.xf.jf.Login" />
         <item itemvalue="Application.DesktopTest" />
       </list>
     </recent_temporary>
@@ -131,6 +144,10 @@
       <workItem from="1655715130942" duration="2646000" />
       <workItem from="1655718185608" duration="3000" />
       <workItem from="1655720145170" duration="374000" />
+      <workItem from="1655872068172" duration="38000" />
+      <workItem from="1655872123825" duration="1819000" />
+      <workItem from="1655873975750" duration="934000" />
+      <workItem from="1655874932535" duration="3517000" />
     </task>
     <task id="LOCAL-00001" summary="初始化仓库">
       <created>1655692599640</created>
@@ -167,5 +184,15 @@
     <MESSAGE value="初始化仓库" />
     <MESSAGE value="更新文件" />
     <option name="LAST_COMMIT_MESSAGE" value="更新文件" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -16,6 +16,7 @@ public class BgObj extends GameObj {
     }
 
     public BgObj() {
+        super();
     }
 
     public BgObj(Image image, int x, int y, int w, int h, double speed, GameWin gameWin) {
