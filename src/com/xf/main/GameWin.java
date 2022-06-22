@@ -32,6 +32,9 @@ public class GameWin extends JFrame implements Runnable {
     //参数 背景图片 坐标（此处Y坐标 -1800 是因为需要将窗口长度-图片长度 速度
     BgObj bgObj = new BgObj(GameUtils.bgImg, 0, -1800, 2);
 
+    //游戏得分
+    int score = 0;
+
     //我方飞机对象
     public  PlaneObj planeObj = new PlaneObj(GameUtils.heroImg, 290, 550, 50, 41, 0, this);
 
@@ -62,9 +65,7 @@ public class GameWin extends JFrame implements Runnable {
             gImage.drawImage(GameUtils.bgImg, 0, 0, width, height, null);
             gImage.drawImage(GameUtils.bossImg, 100, 100, 160, 110, null);
             gImage.drawImage(GameUtils.heroImg, 150, 600, 50, 40, null);
-            gImage.setFont(new Font("微软雅黑", Font.BOLD, 30));
-            gImage.setColor(Color.WHITE);
-            gImage.drawString("单 机 游 戏 开 始", 150, 300);
+            GameUtils.drawWord(gImage,"单 机 游 戏 开 始",Color.WHITE,30, 150, 300);
         }
         //状态为游戏开始
         if (state == 1) {
@@ -78,9 +79,7 @@ public class GameWin extends JFrame implements Runnable {
         //死亡
         if (state == 3) {
             gImage.drawImage(GameUtils.explodeImg,planeObj.getX()-10,planeObj.getY()-10,null);
-            gImage.setColor(Color.red);
-            gImage.setFont(new Font("微软雅黑", Font.BOLD, 30));
-            gImage.drawString("游戏失败",width/3,height/2);
+            GameUtils.drawWord(gImage,"游 戏 失 败",Color.RED,30,width/3,height/2);
         }
         g.drawImage(offScreenImage, 0, 0, null);
     }

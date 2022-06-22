@@ -34,4 +34,11 @@ public class GameUtils {
     public static List<BulletObj> bulletList = new ArrayList<>();
     //要删除元素的集合
     public static List<GameObj> removeList = new ArrayList<>();
+
+    //绘制字符串的工具方法
+    public static void drawWord(Graphics gImage,String str,Color color,int size,int x,int y){
+        gImage.setColor(color);
+        gImage.setFont(new Font("仿宋",Font.BOLD,size));
+        gImage.drawString(str,x,y);
+    }
 }

@@ -38,6 +38,11 @@ public class PlaneObj extends GameObj {
     @Override
     public void paintSelf(Graphics g) {
         super.paintSelf(g);
+
+        if (this.getRec().intersects(gameWin.bossObj.getRec())){
+            //死亡
+            GameWin.state = 3;
+        }
     }
 
     @Override
