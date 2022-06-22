@@ -10,6 +10,9 @@ public class BgObj extends GameObj {
         super.paintSelf(g);
         //Y轴移动
         y += speed;
+        if (y > 0) {
+            y = -1800;
+        }
     }
 
     public BgObj() {

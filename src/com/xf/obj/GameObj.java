@@ -8,12 +8,12 @@ public class GameObj {
     //图片
     Image image;
     /*
-    * 坐标轴
-    * X轴
-    * Y轴
-    * W：宽度
-    * h：高度
-    * */
+     * 坐标轴
+     * X轴
+     * Y轴
+     * W：宽度
+     * h：高度
+     * */
     int x;
     int y;
     int w;
@@ -46,18 +46,13 @@ public class GameObj {
     }
 
     //重绘自身的方法
-    public void paintSelf(Graphics g){
-        g.drawImage(image,x,y,500,700,null);
-        if (y>=100){
-            speed*=-1;
-        }else if (y<=-210){
-            speed*=-1;
-        }
+    public void paintSelf(Graphics g) {
+        g.drawImage(image, x, y, 500, 1200, null);
     }
 
     //获取自身矩形的方法，用于碰撞测试
-    public Rectangle getRec(){
-        return new Rectangle(x,y,w,h);
+    public Rectangle getRec() {
+        return new Rectangle(x, y, w, h);
     }
 
     public Image getImage() {

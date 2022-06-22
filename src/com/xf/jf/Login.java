@@ -22,7 +22,7 @@ public class Login extends JFrame {
         //设置当前面板布局为空
         panel.setLayout(null);
         //设置窗口大小为适应
-        panel.setBounds(0, 0, 450, 400);
+        panel.setBounds(0, 0, 500, 400);
         //设置面板背景
         panel.setBackground(Color.WHITE);
         //获取内容面板，因为JFrame不能直接添加组件，需要用getContentPane()函数获取内容面板，再在内容面板上进行添加组件。
@@ -71,7 +71,9 @@ public class Login extends JFrame {
 
         //设置背景
         JLabel bgImg = new JLabel();
-        bgImg.setIcon(new ImageIcon(Objects.requireNonNull(this.getClass().getResource("../img/bg2.jpg"))));
+        //bgImg.setIcon(new ImageIcon(Objects.requireNonNull(this.getClass().getResource("../img/bg2.jpg"))));
+        Image bg = new ImageIcon(Objects.requireNonNull(this.getClass().getResource("../img/bg2.png"))).getImage().getScaledInstance(500,400,Image.SCALE_DEFAULT);
+        bgImg.setIcon(new ImageIcon(bg));
         bgImg.setBounds(0, 0, 500, 400);
         panel.add(bgImg);
 
