@@ -73,6 +73,8 @@ public class GameWin extends JFrame implements Runnable {
         }
         //状态为游戏开始
         if (state == 1) {
+            //此行代码最好是放在遍历的上方
+            GameUtils.gameObjList.addAll(GameUtils.explodeObjList);
             //绘制所有素材
             for (GameObj gameObj : GameUtils.gameObjList) {
                 gameObj.paintSelf(gImage);
@@ -149,7 +151,6 @@ public class GameWin extends JFrame implements Runnable {
                             break;
                         default:
                     }
-                    System.out.println(state);
                 }
             }
         });
@@ -181,7 +182,7 @@ public class GameWin extends JFrame implements Runnable {
             GameUtils.gameObjList.add(GameUtils.shellObjList.get(GameUtils.shellObjList.size() - 1));
         }
 
-        //敌方飞机对象 每重绘10次，生成一个敌方飞机
+        //敌方飞机对象 每重绘15次，生成一个敌方飞机
         if (count % 15 == 0) {
             GameUtils.enemyObjList.add(new EnemyObj(GameUtils.enemyImg, (int) (Math.random() * 10) * 50, 0, 71, 48, 3, this));
             GameUtils.gameObjList.add(GameUtils.enemyObjList.get(GameUtils.enemyObjList.size() - 1));

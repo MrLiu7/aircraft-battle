@@ -1,6 +1,7 @@
 package com.xf.obj;
 
 import com.xf.main.GameWin;
+import com.xf.utils.GameUtils;
 
 import java.awt.*;
 
@@ -27,5 +28,12 @@ public class ShellObj extends GameObj{
     public void paintSelf(Graphics g) {
         super.paintSelf(g);
         y-=speed;
+
+        //我方子弹越界消失，则进入删除集合
+        if(y<0){
+            this.x=-100;
+            this.y=-100;
+            GameUtils.removeList.add(this);
+        }
     }
 }

@@ -26,6 +26,11 @@ public class GameObj {
     public GameObj() {
     }
 
+    public GameObj(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     public GameObj(Image image, int x, int y, int w, int h, double speed, GameWin gameWin) {
         super();
         this.image = image;

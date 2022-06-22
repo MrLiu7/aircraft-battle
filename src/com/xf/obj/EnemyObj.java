@@ -32,6 +32,13 @@ public class EnemyObj extends GameObj {
         //敌机自己检测是否和子弹碰撞到了
         for (ShellObj shellObj : GameUtils.shellObjList) {
             if (this.getRec().intersects(shellObj.getRec())) {
+                //爆炸效果 这三行代码放此处想过最佳
+                ExplodeObj explodeObj = new ExplodeObj(x,y);
+                GameUtils.explodeObjList.add(explodeObj);
+                //进入移除队列释放内存
+                GameUtils.removeList.add(explodeObj);
+
+
                 shellObj.setX(-100);
                 shellObj.setY(-100);
                 this.x = -200;
@@ -48,6 +55,11 @@ public class EnemyObj extends GameObj {
         if (this.getRec().intersects(this.gameWin.planeObj.getRec())) {
             //游戏结束标记
             GameWin.state = 3;
+        }
+
+        //如果敌机跑出窗口，加入移除集合
+        if (y>1000){
+            GameUtils.removeList.add(this);
         }
 
     }

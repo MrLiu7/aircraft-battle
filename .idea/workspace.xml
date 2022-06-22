@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="更新文件">
+      <change afterPath="$PROJECT_DIR$/src/com/xf/obj/ExplodeObj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xf/main/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/main/GameWin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xf/obj/BossObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/BossObj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xf/obj/BulletObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/BulletObj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xf/obj/EnemyObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/EnemyObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/GameObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/GameObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/ShellObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/ShellObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/utils/GameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/utils/GameUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,23 +39,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/BaiduSyncdisk/AircraftBattle",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/BaiduSyncdisk/AircraftBattle&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src" />
@@ -72,10 +76,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.xf.jf.Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xf.jf.Login" />
       <module name="AircraftBattle" />
-      <option name="VM_PARAMETERS" value="-Dfile.encoding=gbk" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.xf.jf.*" />
@@ -109,14 +112,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.test" />
-      <item itemvalue="Application.Login" />
+      <item itemvalue="Application.com.xf.jf.Login" />
       <item itemvalue="Application.DesktopTest" />
       <item itemvalue="Application.com.xf.main.GameWin" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.com.xf.main.GameWin" />
-        <item itemvalue="Application.Login" />
+        <item itemvalue="Application.com.xf.jf.Login" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.DesktopTest" />
       </list>
@@ -142,8 +145,9 @@
       <workItem from="1655872068172" duration="38000" />
       <workItem from="1655872123825" duration="1819000" />
       <workItem from="1655873975750" duration="934000" />
-      <workItem from="1655874932535" duration="3871000" />
-      <workItem from="1655879655943" duration="10165000" />
+      <workItem from="1655874932535" duration="3517000" />
+      <workItem from="1655898617762" duration="617000" />
+      <workItem from="1655906033798" duration="2821000" />
     </task>
     <task id="LOCAL-00001" summary="初始化仓库">
       <created>1655692599640</created>
@@ -159,35 +163,7 @@
       <option name="project" value="LOCAL" />
       <updated>1655816241669</updated>
     </task>
-    <task id="LOCAL-00003" summary="更新文件">
-      <created>1655878577944</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1655878577944</updated>
-    </task>
-    <task id="LOCAL-00004" summary="更新文件">
-      <created>1655879737055</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1655879737055</updated>
-    </task>
-    <task id="LOCAL-00005" summary="更新文件">
-      <created>1655885102963</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1655885102963</updated>
-    </task>
-    <task id="LOCAL-00006" summary="更新文件">
-      <created>1655886077367</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1655886077367</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,11 +192,6 @@
           <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/xf/main/GameWin.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

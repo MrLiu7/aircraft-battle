@@ -8,6 +8,8 @@ import java.awt.*;
 public class BossObj extends GameObj{
     //BOSS生命值100
     int life = 3;
+    //血条显示宽度(每次消失的宽度）
+    int lifeLength = 100/3;
     public BossObj() {
         super();
     }
@@ -48,5 +50,11 @@ public class BossObj extends GameObj{
                 }
             }
         }
+        //血条白色背景
+        g.setColor(Color.WHITE);
+        g.fillRect(20,80,100,10);
+        //绘制红色血条
+        g.setColor(Color.RED);
+        g.fillRect(20,80,life*lifeLength,10);
     }
 }

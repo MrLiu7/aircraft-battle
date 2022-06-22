@@ -34,5 +34,10 @@ public class BulletObj extends GameObj {
                 GameWin.state = 3;
             }
         }
+
+        //如果子弹跑出窗口，加入移除集合
+        if (y>1000){
+            GameUtils.removeList.add(this);
+        }
     }
 }
