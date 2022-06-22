@@ -19,7 +19,7 @@ public class GameWin extends JFrame implements Runnable {
      * 3：通关成功
      * 4：通关失败
      * */
-    static int state = 0;
+    public static int state = 0;
 
     //窗口大小 宽 高
     static int width = 500;
@@ -33,7 +33,10 @@ public class GameWin extends JFrame implements Runnable {
     BgObj bgObj = new BgObj(GameUtils.bgImg, 0, -1800, 2);
 
     //我方飞机对象
-    PlaneObj planeObj = new PlaneObj(GameUtils.heroImg, 290, 550, 20, 30, 0, this);
+    public  PlaneObj planeObj = new PlaneObj(GameUtils.heroImg, 290, 550, 50, 41, 0, this);
+
+    //敌方Boss对象
+    public BossObj bossObj = new BossObj(GameUtils.bossImg,250,20,100,75,3,this);
 
     //记录游戏重回次数（防止子弹重绘过快）初始化为 0
     int count = 1;
@@ -69,6 +72,15 @@ public class GameWin extends JFrame implements Runnable {
             for (GameObj gameObj : GameUtils.gameObjList) {
                 gameObj.paintSelf(gImage);
             }
+            //移除要删除的元素
+            GameUtils.gameObjList.removeAll(GameUtils.removeList);
+        }
+        //死亡
+        if (state == 3) {
+            gImage.drawImage(GameUtils.explodeImg,planeObj.getX()-10,planeObj.getY()-10,null);
+            gImage.setColor(Color.red);
+            gImage.setFont(new Font("微软雅黑", Font.BOLD, 30));
+            gImage.drawString("游戏失败",width/3,height/2);
         }
         g.drawImage(offScreenImage, 0, 0, null);
     }
@@ -90,6 +102,7 @@ public class GameWin extends JFrame implements Runnable {
 
         GameUtils.gameObjList.add(bgObj);
         GameUtils.gameObjList.add(planeObj);
+        GameUtils.gameObjList.add(bossObj);
 
         //鼠标监听
         this.addMouseListener(new MouseAdapter() {
@@ -131,10 +144,16 @@ public class GameWin extends JFrame implements Runnable {
             GameUtils.gameObjList.add(GameUtils.shellObjList.get(GameUtils.shellObjList.size() - 1));
         }
 
-        //敌方飞机对象 每重绘5次，生成一个敌方飞机
+        //敌方飞机对象 每重绘10次，生成一个敌方飞机
         if (count % 10 == 0) {
-            GameUtils.enemyObjList.add(new EnemyObj(GameUtils.enemyImg,(int) (Math.random()*10)*50,0,20,30,5,this));
-            GameUtils.gameObjList.add(GameUtils.enemyObjList.get(GameUtils.enemyObjList.size()-1));
+            GameUtils.enemyObjList.add(new EnemyObj(GameUtils.enemyImg, (int) (Math.random() * 10) * 50, 0, 71, 48, 3, this));
+            GameUtils.gameObjList.add(GameUtils.enemyObjList.get(GameUtils.enemyObjList.size() - 1));
+        }
+
+        //敌方子弹对象 每重绘10次，生成一个子弹
+        if (count%30==0){
+            GameUtils.bulletList.add(new BulletObj(GameUtils.bulletImg, bossObj.getX()+76, bossObj.getY()+85,14,25,5,this));
+            GameUtils.gameObjList.add(GameUtils.bulletList.get(GameUtils.bulletList.size() - 1));
         }
     }
 
