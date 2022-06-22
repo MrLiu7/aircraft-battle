@@ -4,16 +4,73 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="更新文件">
-      <change afterPath="$PROJECT_DIR$/src/com/xf/obj/ExplodeObj.java" afterDir="false" />
+    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="基本完成">
+      <change afterPath="$PROJECT_DIR$/src/com/liujiji/musicplayer/MusicPlay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/liujiji/musicplayer/game_music.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/liujiji/musicplayer/林贝贝 - 后知后觉.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/liujiji/musicplayer/爱你王心凌.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/playerTest/MusicTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/playerTest/game_music.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/main/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/main/GameWin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/BossObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/BossObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/BulletObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/BulletObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/EnemyObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/EnemyObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/GameObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/GameObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/ShellObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/ShellObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/utils/GameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/utils/GameUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/bg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/bg1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/bg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/bg2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/bg3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/bg3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/bg4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/bg4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/bg5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/bg5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/boss.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/boss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/boss2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/boss2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/bullet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep04.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep05.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep06.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep07.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep07.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep08.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep08.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep09.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep09.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep10.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep11.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep12.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep13.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep14.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/ep15.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e10.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e10.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e11.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e11.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e12.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e12.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e13.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e13.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e14.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e14.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e15.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e15.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e4.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e5.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e5.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e6.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e6.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e7.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e7.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e8.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e8.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/explode/e9.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/explode/e9.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/fire.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/fire.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/game_music.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/game_music.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/girl4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/girl4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/hero.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/hero.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/qq.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/qq.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/score.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/score.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/shell.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/shell.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/img/space.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/space.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/jf/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/index/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/main/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/main/GameWin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/BgObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/BgObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/BossObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/BossObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/BulletObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/BulletObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/EnemyObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/EnemyObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/ExplodeObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/ExplodeObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/GameObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/GameObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/PlaneObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/PlaneObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/ShellObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/ShellObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xf/utils/GameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/utils/GameUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,36 +96,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/BaiduSyncdisk/AircraftBattle&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "G:/BaiduSyncdisk/AircraftBattle/src/com/liujiji/musicplayer",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\musicplayer" />
+      <recent name="G:\BaiduSyncdisk\AircraftBattle\src\com\liujiji" />
+      <recent name="G:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\test" />
+      <recent name="G:\BaiduSyncdisk\AircraftBattle\test\playerTest" />
       <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src" />
-      <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src\com\xf\imgs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\musicplayer" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.xf.main.GameWin">
-    <configuration name="DesktopTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="webtest.DesktopTest" />
+  <component name="RunManager" selected="Application.GameWin">
+    <configuration name="GameWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liujiji.main.GameWin" />
       <module name="AircraftBattle" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="webtest.*" />
+          <option name="PATTERN" value="com.liujiji.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +139,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.xf.jf.Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xf.jf.Login" />
+    <configuration name="MusicPlay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liujiji.musicplayer.MusicPlay" />
       <module name="AircraftBattle" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xf.jf.*" />
+          <option name="PATTERN" value="com.liujiji.musicplayer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,13 +152,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.xf.main.GameWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xf.main.GameWin" />
+    <configuration name="MusicTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="playerTest.MusicTest" />
       <module name="AircraftBattle" />
-      <option name="VM_PARAMETERS" value="-Dfile.encoding=gbk" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xf.main.*" />
+          <option name="PATTERN" value="playerTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,25 +165,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
+    <configuration name="UI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="playerTest.UI" />
       <module name="AircraftBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="playerTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.liujiji.test.MusicPlayer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liujiji.test.MusicPlayer" />
+      <module name="AircraftBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liujiji.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.test" />
-      <item itemvalue="Application.com.xf.jf.Login" />
-      <item itemvalue="Application.DesktopTest" />
-      <item itemvalue="Application.com.xf.main.GameWin" />
+      <item itemvalue="Application.GameWin" />
+      <item itemvalue="Application.MusicPlay" />
+      <item itemvalue="Application.MusicTest" />
+      <item itemvalue="Application.UI" />
+      <item itemvalue="Application.com.liujiji.test.MusicPlayer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.xf.main.GameWin" />
-        <item itemvalue="Application.com.xf.jf.Login" />
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.DesktopTest" />
+        <item itemvalue="Application.GameWin" />
+        <item itemvalue="Application.MusicPlay" />
+        <item itemvalue="Application.MusicTest" />
+        <item itemvalue="Application.UI" />
+        <item itemvalue="Application.com.liujiji.test.MusicPlayer" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +230,7 @@
       <workItem from="1655873975750" duration="934000" />
       <workItem from="1655874932535" duration="3517000" />
       <workItem from="1655898617762" duration="617000" />
-      <workItem from="1655906033798" duration="2821000" />
+      <workItem from="1655906033798" duration="9218000" />
     </task>
     <task id="LOCAL-00001" summary="初始化仓库">
       <created>1655692599640</created>
@@ -163,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655816241669</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="基本完成">
+      <created>1655909107429</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655909107429</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +264,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -183,7 +279,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化仓库" />
     <MESSAGE value="更新文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新文件" />
+    <MESSAGE value="基本完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="基本完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
