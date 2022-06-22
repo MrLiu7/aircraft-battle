@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="加入音乐播放功能">
-      <change afterPath="$PROJECT_DIR$/src/com/liujiji/object/EnemyBulletObj.java" afterDir="false" />
+    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="加入敌方普通飞机可以发射子弹">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep15.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep14.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep14.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/liujiji/main/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/main/GameWin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/object/BossObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/BossObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/object/BulletObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/BossBulletObj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/liujiji/object/EnemyObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/EnemyObj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/liujiji/utils/GameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/utils/GameUtils.java" afterDir="false" />
     </list>
@@ -172,7 +178,7 @@
       <workItem from="1655873975750" duration="934000" />
       <workItem from="1655874932535" duration="3517000" />
       <workItem from="1655898617762" duration="617000" />
-      <workItem from="1655906033798" duration="13304000" />
+      <workItem from="1655906033798" duration="14563000" />
     </task>
     <task id="LOCAL-00001" summary="初始化仓库">
       <created>1655692599640</created>
@@ -202,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655916250631</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="加入敌方普通飞机可以发射子弹">
+      <created>1655920155314</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655920155314</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +243,8 @@
     <MESSAGE value="更新文件" />
     <MESSAGE value="基本完成" />
     <MESSAGE value="加入音乐播放功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入音乐播放功能" />
+    <MESSAGE value="加入敌方普通飞机可以发射子弹" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入敌方普通飞机可以发射子弹" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

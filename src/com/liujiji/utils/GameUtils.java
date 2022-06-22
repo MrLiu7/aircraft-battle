@@ -22,8 +22,9 @@ public class GameUtils {
     public static Image bulletImg = new ImageIcon(Objects.requireNonNull(GameWin.class.getResource("../img/ep15.png"))).getImage();
     //敌机普通子弹
     public static Image enemyBulletImg = new ImageIcon(Objects.requireNonNull(GameWin.class.getResource("../img/bullet.png"))).getImage();
-    //敌方战机
-    public static Image enemyImg = new ImageIcon(Objects.requireNonNull(GameWin.class.getResource("../img/ep01.png"))).getImage();
+    //敌方战机类型集合
+    public static List<Image> enemyImgList = new ArrayList<>();
+    //public static Image enemyImg = new ImageIcon(Objects.requireNonNull(GameWin.class.getResource("../img/ep01.png"))).getImage();
     //我方子弹集合
     public static List<ShellObj> shellObjList = new ArrayList<>();
     //所有游戏物体的集合

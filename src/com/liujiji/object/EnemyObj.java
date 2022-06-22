@@ -3,7 +3,9 @@ package com.liujiji.object;
 import com.liujiji.main.GameWin;
 import com.liujiji.utils.GameUtils;
 
+import javax.swing.*;
 import java.awt.*;
+import java.util.Objects;
 
 /**
  * 敌机类
@@ -14,6 +16,13 @@ import java.awt.*;
  */
 public class EnemyObj extends GameObj {
     private int count = 0;
+
+    //通过静态代码块一次性将所有战机的类型导入
+    static {
+        for (int i = 1; i < 15; i++) {
+            GameUtils.enemyImgList.add(new ImageIcon(Objects.requireNonNull(GameWin.class.getResource("../img/ep"+i+".png"))).getImage());
+        }
+    }
 
     public int getCount() {
         return count;

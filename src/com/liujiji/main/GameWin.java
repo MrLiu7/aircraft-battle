@@ -204,7 +204,7 @@ public class GameWin extends JFrame implements Runnable {
 
         //敌方飞机对象 每重绘15次，生成一个敌方飞机
         if (count % 15 == 0) {
-            GameUtils.enemyObjList.add(new EnemyObj(GameUtils.enemyImg, (int) (Math.random() * 10) * 50, 0, 71, 48, 3, this));
+            GameUtils.enemyObjList.add(new EnemyObj(GameUtils.enemyImgList.get(count%14), (int) (Math.random() * 10) * 50, 0, 71, 48, 3, this));
             GameUtils.gameObjList.add(GameUtils.enemyObjList.get(GameUtils.enemyObjList.size() - 1));
 
             //敌方数量自增
