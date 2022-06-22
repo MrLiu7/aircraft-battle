@@ -10,6 +10,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.Iterator;
 import java.util.Objects;
 
 public class GameWin extends JFrame implements Runnable {
@@ -50,7 +51,7 @@ public class GameWin extends JFrame implements Runnable {
     public BossObj bossObj = new BossObj(GameUtils.bossImg, 250, 20, 100, 75, 3, this);
 
     //记录游戏重回次数（防止子弹重绘过快）初始化为 0
-    int count = 1;
+    public static int count = 1;
 
     public static void main(String[] args) {
         GameWin gameWin = new GameWin();
@@ -210,10 +211,19 @@ public class GameWin extends JFrame implements Runnable {
             ++enemyCount;
         }
 
-        //敌方子弹对象 每重绘10次，生成一个子弹
-        if (count % 20 == 0) {
-            GameUtils.bulletList.add(new BulletObj(GameUtils.bulletImg, bossObj.getX() + 76, bossObj.getY() + 85, 14, 25, 5, this));
+        //敌方BOSS子弹对象 每重绘50次，生成一个子弹
+        if (count % 50 == 0) {
+            GameUtils.bulletList.add(new BossBulletObj(GameUtils.bulletImg, bossObj.getX() + 76, bossObj.getY() + 85, 14, 25, 5, this));
             GameUtils.gameObjList.add(GameUtils.bulletList.get(GameUtils.bulletList.size() - 1));
+        }
+
+        //敌机发射子弹
+        //敌方子弹对象 每重绘200次，生成一个子弹
+        for (EnemyObj enemyObj:GameUtils.enemyObjList) {
+            if (enemyObj.getCount() % 200 == 0) {
+                GameUtils.enemyBulletList.add(new EnemyBulletObj(GameUtils.enemyBulletImg, enemyObj.getX() + 28, enemyObj.getY() + 20, 14, 25, 10, this));
+                GameUtils.gameObjList.add(GameUtils.enemyBulletList.get(GameUtils.enemyBulletList.size() - 1));
+            }
         }
     }
 

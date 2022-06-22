@@ -6,25 +6,25 @@ import com.liujiji.utils.GameUtils;
 import java.awt.*;
 
 /**
- * 敌方子弹类
+ * 敌方BOSS子弹类
  */
-public class BulletObj extends GameObj {
-    public BulletObj() {
+public class BossBulletObj extends GameObj {
+    public BossBulletObj() {
         super();
     }
 
-    public BulletObj(Image image, int x, int y, int w, int h, double speed, GameWin gameWin) {
+    public BossBulletObj(Image image, int x, int y, int w, int h, double speed, GameWin gameWin) {
         super(image, x, y, w, h, speed, gameWin);
     }
 
-    public BulletObj(Image image, int x, int y, double speed) {
+    public BossBulletObj(Image image, int x, int y, double speed) {
         super(image, x, y, speed);
     }
 
     @Override
     public void paintSelf(Graphics g) {
-        //是否出现了100架飞机
-        if (GameWin.enemyCount > 10) {
+        //是否出现了30架飞机
+        if (GameWin.enemyCount > 30) {
             super.paintSelf(g);
             y += speed;
 

@@ -13,6 +13,12 @@ import java.awt.*;
  * @apiNote
  */
 public class EnemyObj extends GameObj {
+    private int count = 0;
+
+    public int getCount() {
+        return count;
+    }
+
     public EnemyObj() {
         super();
     }
@@ -28,6 +34,7 @@ public class EnemyObj extends GameObj {
     @Override
     public void paintSelf(Graphics g) {
         super.paintSelf(g);
+        ++count;
         y += speed;
         //敌机自己检测是否和子弹碰撞到了
         for (ShellObj shellObj : GameUtils.shellObjList) {
@@ -62,5 +69,11 @@ public class EnemyObj extends GameObj {
             GameUtils.removeList.add(this);
         }
 
+        ////敌机发射子弹
+        ////敌方子弹对象 每重绘40次，生成一个子弹
+        //if (count % 120 == 0) {
+        //    GameUtils.enemyBulletList.add(new EnemyBulletObj(GameUtils.enemyBulletImg, this.getX() + 28, this.getY() + 20, 14, 25, 15, gameWin));
+        //    GameUtils.gameObjList.add(GameUtils.enemyBulletList.get(GameUtils.enemyBulletList.size() - 1));
+        //}
     }
 }

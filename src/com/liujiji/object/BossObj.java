@@ -7,9 +7,9 @@ import java.awt.*;
 
 public class BossObj extends GameObj{
     //BOSS生命值100
-    int life = 3;
+    int life = 20;
     //血条显示宽度(每次消失的宽度）
-    int lifeLength = 100/3;
+    int lifeLength = 100/life;
     public BossObj() {
         super();
     }
@@ -24,8 +24,8 @@ public class BossObj extends GameObj{
 
     @Override
     public void paintSelf(Graphics g) {
-        //是否出现了100架飞机
-        if (GameWin.enemyCount>10){
+        //是否出现了30架飞机
+        if (GameWin.enemyCount>30){
             super.paintSelf(g);
             if (x<-50||x>500-100){
                 speed*=-1;
