@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="更新文件">
-      <change afterPath="$PROJECT_DIR$/src/com/xf/img/bg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xf/obj/EnemyObj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xf/obj/PlaneObj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xf/obj/ShellObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/jf/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/jf/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/main/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/main/GameWin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/BgObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/BgObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/GameObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/obj/GameObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/obj/PlaneUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xf/utils/GameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xf/utils/GameUtils.java" afterDir="false" />
-    </list>
+    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="更新文件" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +52,7 @@
       <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src\com\xf\imgs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.xf.main.GameWin">
+  <component name="RunManager" selected="Application.com.xf.jf.Login">
     <configuration name="DesktopTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="webtest.DesktopTest" />
       <module name="AircraftBattle" />
@@ -120,9 +108,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.xf.jf.Login" />
         <item itemvalue="Application.com.xf.main.GameWin" />
         <item itemvalue="Application.test" />
-        <item itemvalue="Application.com.xf.jf.Login" />
         <item itemvalue="Application.DesktopTest" />
       </list>
     </recent_temporary>
@@ -147,7 +135,7 @@
       <workItem from="1655872068172" duration="38000" />
       <workItem from="1655872123825" duration="1819000" />
       <workItem from="1655873975750" duration="934000" />
-      <workItem from="1655874932535" duration="3517000" />
+      <workItem from="1655874932535" duration="3871000" />
     </task>
     <task id="LOCAL-00001" summary="初始化仓库">
       <created>1655692599640</created>
@@ -163,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655816241669</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="更新文件">
+      <created>1655878577944</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655878577944</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
