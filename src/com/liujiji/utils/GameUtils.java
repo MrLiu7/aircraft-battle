@@ -11,6 +11,7 @@ import java.util.Objects;
 
 public class GameUtils {
     public static Image bgImg = new ImageIcon(Objects.requireNonNull(GameWin.class.getResource("../img/space.jpg"))).getImage();
+    public static Image index = new ImageIcon(Objects.requireNonNull(GameWin.class.getResource("../img/index.png"))).getImage();
     public static Image bossImg = new ImageIcon(Objects.requireNonNull(GameWin.class.getResource("../img/boss2.png"))).getImage();
     //爆炸效果
     public static Image explodeImg = new ImageIcon(Objects.requireNonNull(GameWin.class.getResource("../img/explode/e12.gif"))).getImage();

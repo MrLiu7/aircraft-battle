@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class BossObj extends GameObj{
     //BOSS生命值100
-    int life = 20;
+    public int life = 20;
     //血条显示宽度(每次消失的宽度）
     int lifeLength = 100/life;
     public BossObj() {

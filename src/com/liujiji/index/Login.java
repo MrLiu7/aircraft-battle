@@ -13,6 +13,7 @@ import java.net.URISyntaxException;
 import java.util.Objects;
 
 public class Login extends JFrame {
+    //自身的辅助对象
     static Login that;
 
     public Login() {

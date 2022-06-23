@@ -7,7 +7,6 @@ import com.liujiji.utils.GameUtils;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.util.Iterator;
 import java.util.Objects;
 
 public class GameWin extends JFrame implements Runnable {
@@ -26,12 +25,14 @@ public class GameWin extends JFrame implements Runnable {
     public static int state = 0;
     //播放音频标志 为0代表当前需要播放
     public static int playFlag = 0;
+    //播放音乐的对象
     MusicPlay musicPlay = null;
 
     //窗口大小 宽 高
     static int width = 500;
     static int height = 700;
-    MenuPanel menuPanel = new MenuPanel();
+    //附着启动 菜单随着主程序启动而启动
+    MenuPanel menuPanel = new MenuPanel(this);
 
 
     //设置双缓冲解决屏闪
@@ -39,11 +40,11 @@ public class GameWin extends JFrame implements Runnable {
 
     //绘制背景图片对象
     //参数 背景图片 坐标（此处Y坐标 -1800 是因为需要将窗口长度-图片长度 速度
-    BgObj bgObj = new BgObj(GameUtils.bgImg, 0, -1800, 2);
+    public static BgObj bgObj = new BgObj(GameUtils.bgImg, 0, -1800, 2);
 
     //游戏得分
     public static int score = 0;
-    //敌方小飞机数量
+    //敌方已经出现的小飞机数量
     public static int enemyCount = 0;
 
     //我方飞机对象
@@ -52,12 +53,19 @@ public class GameWin extends JFrame implements Runnable {
     //敌方Boss对象
     public BossObj bossObj = new BossObj(GameUtils.bossImg, 250, 20, 100, 75, 3, this);
 
-    //记录游戏重回次数（防止子弹重绘过快）初始化为 0
+    //记录游戏重绘次数（防止子弹重绘过快）初始化为 0
     public static int count = 1;
 
     public static void main(String[] args) {
         GameWin gameWin = new GameWin();
         gameWin.lunch();
+    }
+
+    //初始化需要添加的元素
+    public void addFirst(){
+        GameUtils.gameObjList.add(bgObj);
+        GameUtils.gameObjList.add(planeObj);
+        GameUtils.gameObjList.add(bossObj);
     }
 
     @Override
@@ -73,22 +81,24 @@ public class GameWin extends JFrame implements Runnable {
         //g 画板，画入背景图片
         //判断游戏状态，当游戏还没开始的时候才显示界面
         if (state == 0) {
-            gImage.drawImage(GameUtils.bgImg, 0, 0, width, height, null);
-            gImage.drawImage(GameUtils.bossImg, 100, 100, 160, 110, null);
-            gImage.drawImage(GameUtils.heroImg, 150, 600, 50, 40, null);
-            GameUtils.drawWord(gImage, "单 机 游 戏 开 始", Color.WHITE, 30, 150, 300);
+            gImage.drawImage(GameUtils.index, 0, 0, width, height, null);
+//            gImage.drawImage(GameUtils.bossImg, 100, 100, 160, 110, null);
+//            gImage.drawImage(GameUtils.heroImg, 150, 600, 50, 40, null);
+
+            //设置暂停按钮可点击
+            menuPanel.getStopPlay().setEnabled(true);
         }
         //状态为游戏开始
         if (state == 1) {
-            //此行代码最好是放在遍历的上方
+            //此行代码最好是放在遍历的上方 爆炸效果
             GameUtils.gameObjList.addAll(GameUtils.explodeObjList);
+
             //绘制所有素材
             for (GameObj gameObj : GameUtils.gameObjList) {
                 gameObj.paintSelf(gImage);
             }
             //移除要删除的元素
             GameUtils.gameObjList.removeAll(GameUtils.removeList);
-
 
             //播放音频
             /*if (playFlag == 0) {
@@ -108,6 +118,9 @@ public class GameWin extends JFrame implements Runnable {
             //停止播放音乐
             //musicPlay.stopPlay();
             playFlag = 1;
+
+            //设置暂停按钮不可点击
+            menuPanel.getStopPlay().setEnabled(false);
 
             gImage.drawImage(GameUtils.explodeImg, planeObj.getX() - 10, planeObj.getY() - 10, null);
             GameUtils.drawWord(gImage, "游 戏 失 败", Color.RED, 30, width / 3, height / 2);
@@ -137,23 +150,7 @@ public class GameWin extends JFrame implements Runnable {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setIconImage(new ImageIcon(Objects.requireNonNull(this.getClass().getResource("../img/ep14.png"))).getImage());
 
-        GameUtils.gameObjList.add(bgObj);
-        GameUtils.gameObjList.add(planeObj);
-        GameUtils.gameObjList.add(bossObj);
-
-        //鼠标监听
-        this.addMouseListener(new MouseAdapter() {
-            //单击事件
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                if (e.getButton() == 1 && state == 0) {
-                    //改变游戏状态 游戏中
-                    state = 1;
-                    //重绘面板
-                    repaint();
-                }
-            }
-        });
+        addFirst();
 
         //游戏暂停
         this.addKeyListener(new KeyAdapter() {

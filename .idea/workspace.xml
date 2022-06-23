@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="version 1.0">
-      <change afterPath="$PROJECT_DIR$/src/com/liujiji/main/MenuPanel.java" afterDir="false" />
+    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="升级一些信息，做出控制面板">
+      <change afterPath="$PROJECT_DIR$/src/com/liujiji/img/index.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/index/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/index/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/liujiji/main/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/main/GameWin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/musicplayer/MusicPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/musicplayer/MusicPlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/main/MenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/main/MenuPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/object/BossObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/BossObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/utils/GameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/utils/GameUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +60,12 @@
       <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src" />
       <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src\com\xf\imgs" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\img" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.GameWin">
-    <configuration name="GameWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.com.liujiji.index.Login">
+    <configuration name="GameWin" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.liujiji.main.GameWin" />
       <module name="AircraftBattle" />
       <extension name="coverage">
@@ -86,7 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.liujiji.index.Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.liujiji.index.Login" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.liujiji.index.Login" />
       <module name="AircraftBattle" />
       <extension name="coverage">
@@ -129,10 +135,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GameWin" />
-        <item itemvalue="Application.com.liujiji.index.Login" />
-        <item itemvalue="Application.com.xf.main.GameWin" />
         <item itemvalue="Application.Login" />
+        <item itemvalue="Application.com.xf.main.GameWin" />
         <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
@@ -160,7 +164,7 @@
       <workItem from="1655874932535" duration="3871000" />
       <workItem from="1655879655943" duration="10165000" />
       <workItem from="1655921823003" duration="60000" />
-      <workItem from="1655944006907" duration="10746000" />
+      <workItem from="1655944006907" duration="17800000" />
     </task>
     <task id="LOCAL-00001" summary="初始化仓库">
       <created>1655692599640</created>
@@ -211,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655949527583</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="升级一些信息，做出控制面板">
+      <created>1655954860212</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1655954860212</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +243,8 @@
     <MESSAGE value="初始化仓库" />
     <MESSAGE value="更新文件" />
     <MESSAGE value="version 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
+    <MESSAGE value="升级一些信息，做出控制面板" />
+    <option name="LAST_COMMIT_MESSAGE" value="升级一些信息，做出控制面板" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
