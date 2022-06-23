@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="升级一些信息，做出控制面板">
-      <change afterPath="$PROJECT_DIR$/src/com/liujiji/img/index.png" afterDir="false" />
+    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="version 1.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/index/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/index/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/main/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/main/GameWin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/main/MenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/main/MenuPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/object/BossObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/BossObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/utils/GameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/utils/GameUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +46,11 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -64,7 +63,7 @@
       <recent name="D:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\img" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.liujiji.index.Login">
+  <component name="RunManager" selected="应用程序.GameWin">
     <configuration name="GameWin" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.liujiji.main.GameWin" />
       <module name="AircraftBattle" />
@@ -127,19 +126,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GameWin" />
-      <item itemvalue="Application.com.liujiji.index.Login" />
-      <item itemvalue="Application.test" />
-      <item itemvalue="Application.Login" />
-      <item itemvalue="Application.com.xf.main.GameWin" />
+      <item itemvalue="应用程序.GameWin" />
+      <item itemvalue="应用程序.com.liujiji.index.Login" />
+      <item itemvalue="应用程序.Login" />
+      <item itemvalue="应用程序.com.xf.main.GameWin" />
+      <item itemvalue="应用程序.test" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Login" />
-        <item itemvalue="Application.com.xf.main.GameWin" />
-        <item itemvalue="Application.test" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -164,7 +156,8 @@
       <workItem from="1655874932535" duration="3871000" />
       <workItem from="1655879655943" duration="10165000" />
       <workItem from="1655921823003" duration="60000" />
-      <workItem from="1655944006907" duration="17800000" />
+      <workItem from="1655944006907" duration="17898000" />
+      <workItem from="1655976603857" duration="291000" />
     </task>
     <task id="LOCAL-00001" summary="初始化仓库">
       <created>1655692599640</created>
@@ -222,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655954860212</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="version 1.1">
+      <created>1655974383896</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1655974383896</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +244,8 @@
     <MESSAGE value="更新文件" />
     <MESSAGE value="version 1.0" />
     <MESSAGE value="升级一些信息，做出控制面板" />
-    <option name="LAST_COMMIT_MESSAGE" value="升级一些信息，做出控制面板" />
+    <MESSAGE value="version 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 1.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
