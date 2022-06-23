@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="加入敌方普通飞机可以发射子弹">
+    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="更新文件">
+      <change afterPath="$PROJECT_DIR$/src/com/liujiji/musicplayer/爆炸音效.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep09.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/liujiji/img/ep14.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/img/ep14.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/liujiji/main/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/main/GameWin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/object/EnemyObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/EnemyObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/liujiji/utils/GameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/utils/GameUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/musicplayer/MusicPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/musicplayer/MusicPlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/musicplayer/林贝贝 - 后知后觉.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/musicplayer/林贝贝后知后觉.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/object/ExplodeObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/object/ExplodeObj.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "G:/BaiduSyncdisk/AircraftBattle/src/com/liujiji/musicplayer",
+    "last_opened_file_path": "D:/BaiduSyncdisk/AircraftBattle/src/com/liujiji/musicplayer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,14 +56,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\musicplayer" />
-      <recent name="G:\BaiduSyncdisk\AircraftBattle\src\com\liujiji" />
-      <recent name="G:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\test" />
-      <recent name="G:\BaiduSyncdisk\AircraftBattle\test\playerTest" />
+      <recent name="D:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\musicplayer" />
       <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\musicplayer" />
+      <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src\com\xf\imgs" />
     </key>
   </component>
   <component name="RunManager" selected="Application.GameWin">
@@ -88,6 +76,20 @@
       </method>
     </configuration>
     <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xf.jf.Login" />
+      <module name="AircraftBattle" />
+      <option name="VM_PARAMETERS" value="-Dfile.encoding=gbk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xf.jf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.liujiji.index.Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.liujiji.index.Login" />
       <module name="AircraftBattle" />
       <extension name="coverage">
@@ -100,12 +102,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MusicPlay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.liujiji.musicplayer.MusicPlay" />
+    <configuration name="com.xf.main.GameWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xf.main.GameWin" />
       <module name="AircraftBattle" />
+      <option name="VM_PARAMETERS" value="-Dfile.encoding=gbk" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liujiji.musicplayer.*" />
+          <option name="PATTERN" value="com.xf.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,46 +116,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MusicTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="playerTest.MusicTest" />
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
       <module name="AircraftBattle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="playerTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="playerTest.UI" />
-      <module name="AircraftBattle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="playerTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.GameWin" />
+      <item itemvalue="Application.com.liujiji.index.Login" />
+      <item itemvalue="Application.test" />
       <item itemvalue="Application.Login" />
-      <item itemvalue="Application.MusicPlay" />
-      <item itemvalue="Application.MusicTest" />
-      <item itemvalue="Application.UI" />
+      <item itemvalue="Application.com.xf.main.GameWin" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GameWin" />
+        <item itemvalue="Application.com.liujiji.index.Login" />
+        <item itemvalue="Application.com.xf.main.GameWin" />
         <item itemvalue="Application.Login" />
-        <item itemvalue="Application.MusicPlay" />
-        <item itemvalue="Application.MusicTest" />
-        <item itemvalue="Application.UI" />
+        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -176,9 +160,10 @@
       <workItem from="1655872068172" duration="38000" />
       <workItem from="1655872123825" duration="1819000" />
       <workItem from="1655873975750" duration="934000" />
-      <workItem from="1655874932535" duration="3517000" />
-      <workItem from="1655898617762" duration="617000" />
-      <workItem from="1655906033798" duration="14563000" />
+      <workItem from="1655874932535" duration="3871000" />
+      <workItem from="1655879655943" duration="10165000" />
+      <workItem from="1655921823003" duration="60000" />
+      <workItem from="1655944006907" duration="5468000" />
     </task>
     <task id="LOCAL-00001" summary="初始化仓库">
       <created>1655692599640</created>
@@ -194,28 +179,35 @@
       <option name="project" value="LOCAL" />
       <updated>1655816241669</updated>
     </task>
-    <task id="LOCAL-00003" summary="基本完成">
-      <created>1655909107429</created>
+    <task id="LOCAL-00003" summary="更新文件">
+      <created>1655878577944</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1655909107429</updated>
+      <updated>1655878577944</updated>
     </task>
-    <task id="LOCAL-00004" summary="加入音乐播放功能">
-      <created>1655916250631</created>
+    <task id="LOCAL-00004" summary="更新文件">
+      <created>1655879737055</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1655916250631</updated>
+      <updated>1655879737055</updated>
     </task>
-    <task id="LOCAL-00005" summary="加入敌方普通飞机可以发射子弹">
-      <created>1655920155314</created>
+    <task id="LOCAL-00005" summary="更新文件">
+      <created>1655885102963</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1655920155314</updated>
+      <updated>1655885102963</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="更新文件">
+      <created>1655886077367</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655886077367</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,13 +218,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="CUSTOM_BOOLEAN_PROPERTIES">
-                <map>
-                  <entry key="Show.Git.Branches" value="true" />
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -241,10 +227,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化仓库" />
     <MESSAGE value="更新文件" />
-    <MESSAGE value="基本完成" />
-    <MESSAGE value="加入音乐播放功能" />
-    <MESSAGE value="加入敌方普通飞机可以发射子弹" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入敌方普通飞机可以发射子弹" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -253,6 +236,11 @@
           <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/xf/main/GameWin.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

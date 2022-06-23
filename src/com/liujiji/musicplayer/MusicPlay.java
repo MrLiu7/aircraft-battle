@@ -1,15 +1,23 @@
 package com.liujiji.musicplayer;
 
+import com.liujiji.main.GameWin;
+
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
 
-public class MusicPlay extends Thread{
+public class MusicPlay extends Thread {
 
-    private static final String MUSIC_FILE = "src\\com\\liujiji\\musicplayer\\爱你王心凌.wav";
-    private   int state = 1;
+    private String MUSIC_FILE = "src\\com\\liujiji\\musicplayer\\爱你王心凌.wav";
 
-    public void play(){
+    public void setMUSIC_FILE(String MUSIC_FILE) {
+        this.MUSIC_FILE = MUSIC_FILE;
+    }
+
+    private int state = 1;
+    SourceDataLine sourceDataLine = null;
+
+    public void play() {
         // 获取音频输入流
         AudioInputStream audioInputStream = null;
         try {
@@ -26,7 +34,6 @@ public class MusicPlay extends Thread{
         // 设置数据输入
         DataLine.Info dataLineInfo = new DataLine.Info(SourceDataLine.class,
                 audioFormat, AudioSystem.NOT_SPECIFIED);
-        SourceDataLine sourceDataLine = null;
         try {
             sourceDataLine = (SourceDataLine) AudioSystem
                     .getLine(dataLineInfo);
@@ -48,7 +55,7 @@ public class MusicPlay extends Thread{
 
         while (true) {
             try {
-                if (!(state==1&&(count = audioInputStream.read(tempBuffer, 0, tempBuffer.length)) != -1)) break;
+                if (!(state == 1 && (count = audioInputStream.read(tempBuffer, 0, tempBuffer.length)) != -1)) break;
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -57,13 +64,20 @@ public class MusicPlay extends Thread{
             }
         }
 
+
         // 清空数据缓冲,并关闭输入
         sourceDataLine.drain();
         sourceDataLine.close();
+
+        //音乐播放完毕，将标志标记为0
+        //GameWin.playFlag = 0;
     }
 
-    public void stopPlay(){
-        state=0;
+    public void stopPlay() {
+        state = 0;
+        // 清空数据缓冲,并关闭输入
+        sourceDataLine.drain();
+        sourceDataLine.close();
     }
 
     public static void main(String[] args) {

@@ -1,6 +1,7 @@
 package com.liujiji.object;
 
 import com.liujiji.main.GameWin;
+import com.liujiji.musicplayer.MusicPlay;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,6 +9,7 @@ import java.util.Objects;
 
 /**
  * 爆炸类
+ *
  * @author 柳继纪
  * @date 22/6/2022
  * @apiNote
@@ -42,9 +44,18 @@ public class ExplodeObj extends GameObj {
 
     @Override
     public void paintSelf(Graphics g) {
-        if (explodeCount<16){
+        if (explodeCount < 16) {
             image = pic[explodeCount++];
             super.paintSelf(g);
         }
+
+        //发生爆炸音效
+        //保证爆炸只发生一次
+        if (explodeCount == 3) {
+            MusicPlay musicPlay = new MusicPlay();
+            musicPlay.setMUSIC_FILE("src\\com\\liujiji\\musicplayer\\爆炸音效.wav");
+            musicPlay.start();
+        }
+
     }
 }

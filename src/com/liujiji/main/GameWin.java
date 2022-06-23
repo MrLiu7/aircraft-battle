@@ -14,6 +14,9 @@ import java.util.Iterator;
 import java.util.Objects;
 
 public class GameWin extends JFrame implements Runnable {
+    static {
+        new EnemyObj();
+    }
 
     /*
      * 游戏状态标记
@@ -25,7 +28,7 @@ public class GameWin extends JFrame implements Runnable {
      * */
     public static int state = 0;
     //播放音频标志 为0代表当前需要播放
-    int playFlag = 0;
+    public static int playFlag = 0;
     MusicPlay musicPlay = null;
 
     //窗口大小 宽 高
@@ -101,12 +104,12 @@ public class GameWin extends JFrame implements Runnable {
         }
         //死亡
         if (state == 3) {
-            gImage.drawImage(GameUtils.explodeImg, planeObj.getX() - 10, planeObj.getY() - 10, null);
-            GameUtils.drawWord(gImage, "游 戏 失 败", Color.RED, 30, width / 3, height / 2);
-
             //停止播放音乐
             musicPlay.stopPlay();
-            playFlag = 0;
+            playFlag = 1;
+
+            gImage.drawImage(GameUtils.explodeImg, planeObj.getX() - 10, planeObj.getY() - 10, null);
+            GameUtils.drawWord(gImage, "游 戏 失 败", Color.RED, 30, width / 3, height / 2);
         }
         //游戏胜利
         if (state == 4) {
@@ -163,10 +166,11 @@ public class GameWin extends JFrame implements Runnable {
                             musicPlay.stopPlay();
                             playFlag = 1;
                             state = 2;
+                            repaint();
                             break;
                         case 2:
                             //暂停态到运行态
-                            playFlag = 0;
+                            playFlag = 1;
                             state = 1;
                             break;
                         default:
@@ -204,7 +208,8 @@ public class GameWin extends JFrame implements Runnable {
 
         //敌方飞机对象 每重绘15次，生成一个敌方飞机
         if (count % 15 == 0) {
-            GameUtils.enemyObjList.add(new EnemyObj(GameUtils.enemyImgList.get(count%14), (int) (Math.random() * 10) * 50, 0, 71, 48, 3, this));
+            Image image = GameUtils.enemyImgList.get(count%14);
+            GameUtils.enemyObjList.add(new EnemyObj(image, (int) (Math.random() * 10) * 50, 0, image.getWidth(null), image.getHeight(null), 3, this));
             GameUtils.gameObjList.add(GameUtils.enemyObjList.get(GameUtils.enemyObjList.size() - 1));
 
             //敌方数量自增
@@ -212,7 +217,7 @@ public class GameWin extends JFrame implements Runnable {
         }
 
         //敌方BOSS子弹对象 每重绘50次，生成一个子弹
-        if (count % 50 == 0) {
+        if (count % 100 == 0) {
             GameUtils.bulletList.add(new BossBulletObj(GameUtils.bulletImg, bossObj.getX() + 76, bossObj.getY() + 85, 14, 25, 5, this));
             GameUtils.gameObjList.add(GameUtils.bulletList.get(GameUtils.bulletList.size() - 1));
         }
@@ -221,7 +226,7 @@ public class GameWin extends JFrame implements Runnable {
         //敌方子弹对象 每重绘200次，生成一个子弹
         for (EnemyObj enemyObj:GameUtils.enemyObjList) {
             if (enemyObj.getCount() % 200 == 0) {
-                GameUtils.enemyBulletList.add(new EnemyBulletObj(GameUtils.enemyBulletImg, enemyObj.getX() + 28, enemyObj.getY() + 20, 14, 25, 10, this));
+                GameUtils.enemyBulletList.add(new EnemyBulletObj(GameUtils.enemyBulletImg, enemyObj.getX() + 28, enemyObj.getY() + 20, 14, 25, 6, this));
                 GameUtils.gameObjList.add(GameUtils.enemyBulletList.get(GameUtils.enemyBulletList.size() - 1));
             }
         }
