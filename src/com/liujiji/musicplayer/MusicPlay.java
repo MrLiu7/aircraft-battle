@@ -1,7 +1,5 @@
 package com.liujiji.musicplayer;
 
-import com.liujiji.main.GameWin;
-
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +12,7 @@ public class MusicPlay extends Thread {
         this.MUSIC_FILE = MUSIC_FILE;
     }
 
-    private int state = 1;
+    private int flag = 1;
     SourceDataLine sourceDataLine = null;
 
     public void play() {
@@ -55,7 +53,7 @@ public class MusicPlay extends Thread {
 
         while (true) {
             try {
-                if (!(state == 1 && (count = audioInputStream.read(tempBuffer, 0, tempBuffer.length)) != -1)) break;
+                if (!(flag == 1 && (count = audioInputStream.read(tempBuffer, 0, tempBuffer.length)) != -1)) break;
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -74,7 +72,7 @@ public class MusicPlay extends Thread {
     }
 
     public void stopPlay() {
-        state = 0;
+        flag = 0;
         // 清空数据缓冲,并关闭输入
         sourceDataLine.drain();
         sourceDataLine.close();

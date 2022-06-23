@@ -6,10 +6,7 @@ import com.liujiji.utils.GameUtils;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 import java.util.Iterator;
 import java.util.Objects;
 
@@ -34,6 +31,8 @@ public class GameWin extends JFrame implements Runnable {
     //窗口大小 宽 高
     static int width = 500;
     static int height = 700;
+    MenuPanel menuPanel = new MenuPanel();
+
 
     //设置双缓冲解决屏闪
     Image offScreenImage = null;
@@ -89,23 +88,25 @@ public class GameWin extends JFrame implements Runnable {
             }
             //移除要删除的元素
             GameUtils.gameObjList.removeAll(GameUtils.removeList);
+
+
             //播放音频
-            if (playFlag==0){
+            /*if (playFlag == 0) {
                 musicPlay = new MusicPlay();
                 musicPlay.start();
                 //标记当前正在播放音乐
                 playFlag = 1;
-            }
+            }*/
         }
-        //TODO 游戏暂停 该方法进不去？？？
-        if (state==2){
+        //TODO 游戏暂停 该方法进不去？？？  因为 没有重绘，需要重绘才可以
+        if (state == 2) {
             System.out.println("暂停");
-            GameUtils.drawWord(gImage,"游 戏 暂 停",Color.MAGENTA,30,width/3,height/2);
+            GameUtils.drawWord(gImage, "游 戏 暂 停", Color.MAGENTA, 30, width / 3, height / 2);
         }
         //死亡
         if (state == 3) {
             //停止播放音乐
-            musicPlay.stopPlay();
+            //musicPlay.stopPlay();
             playFlag = 1;
 
             gImage.drawImage(GameUtils.explodeImg, planeObj.getX() - 10, planeObj.getY() - 10, null);
@@ -208,7 +209,7 @@ public class GameWin extends JFrame implements Runnable {
 
         //敌方飞机对象 每重绘15次，生成一个敌方飞机
         if (count % 15 == 0) {
-            Image image = GameUtils.enemyImgList.get(count%14);
+            Image image = GameUtils.enemyImgList.get(count % 14);
             GameUtils.enemyObjList.add(new EnemyObj(image, (int) (Math.random() * 10) * 50, 0, image.getWidth(null), image.getHeight(null), 3, this));
             GameUtils.gameObjList.add(GameUtils.enemyObjList.get(GameUtils.enemyObjList.size() - 1));
 
@@ -224,7 +225,7 @@ public class GameWin extends JFrame implements Runnable {
 
         //敌机发射子弹
         //敌方子弹对象 每重绘200次，生成一个子弹
-        for (EnemyObj enemyObj:GameUtils.enemyObjList) {
+        for (EnemyObj enemyObj : GameUtils.enemyObjList) {
             if (enemyObj.getCount() % 200 == 0) {
                 GameUtils.enemyBulletList.add(new EnemyBulletObj(GameUtils.enemyBulletImg, enemyObj.getX() + 28, enemyObj.getY() + 20, 14, 25, 6, this));
                 GameUtils.gameObjList.add(GameUtils.enemyBulletList.get(GameUtils.enemyBulletList.size() - 1));
