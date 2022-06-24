@@ -39,8 +39,8 @@ public class Login extends JFrame {
         password.setFont(new Font("微软雅黑", Font.BOLD, 15));
 
         //设置颜色
-        username.setForeground(Color.BLACK);
-        password.setForeground(Color.BLACK);
+        username.setForeground(Color.WHITE);
+        password.setForeground(Color.WHITE);
 
         //用户名框和密码输入框
         JTextField usernameField = new JTextField(20);
@@ -57,7 +57,7 @@ public class Login extends JFrame {
         JLabel register = new JLabel("没有账号，立即注册");
         register.setFont(new Font("楷体", Font.BOLD, 15));
         register.setBounds(160, 300, 200, 20);
-        register.setForeground(Color.BLACK);
+        register.setForeground(Color.WHITE);
 
 
         //面板添加用户名
@@ -125,7 +125,7 @@ public class Login extends JFrame {
             //鼠标移除
             @Override
             public void mouseExited(MouseEvent e) {
-                register.setForeground(Color.BLACK);
+                register.setForeground(Color.WHITE);
             }
         });
     }

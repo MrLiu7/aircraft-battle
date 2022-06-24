@@ -36,7 +36,7 @@ public class Register extends JFrame {
         //注册页面标题
         JLabel title = new JLabel("欢 迎 加 入 我 们");
         title.setBounds(100, 10, 300, 100);
-        title.setForeground(Color.BLACK);
+        title.setForeground(Color.white);
         title.setFont(new Font("宋体", Font.ITALIC, 30));
         //用户名
         JLabel username = new JLabel("用户名");
@@ -58,10 +58,10 @@ public class Register extends JFrame {
         email.setFont(new Font("微软雅黑", Font.BOLD, 15));
 
         //设置颜色
-        username.setForeground(Color.BLACK);
-        password.setForeground(Color.BLACK);
-        code.setForeground(Color.BLACK);
-        email.setForeground(Color.BLACK);
+        username.setForeground(Color.white);
+        password.setForeground(Color.white);
+        code.setForeground(Color.white);
+        email.setForeground(Color.white);
 
         //用户名框和密码输入框
         JTextField usernameField = new JTextField(20);
@@ -81,7 +81,7 @@ public class Register extends JFrame {
         JLabel officialWebsite = new JLabel("访问我们，获取帮助");
         officialWebsite.setFont(new Font("楷体", Font.BOLD, 15));
         officialWebsite.setBounds(160, 330, 200, 20);
-        officialWebsite.setForeground(Color.BLACK);
+        officialWebsite.setForeground(Color.white);
 
 
         //面板添加用户名
@@ -163,13 +163,13 @@ public class Register extends JFrame {
             @Override
             public void mouseEntered(MouseEvent e) {
                 //鼠标移入
-                getCode.setForeground(Color.PINK);
+                getCode.setForeground(Color.RED);
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
                 //鼠标移入
-                getCode.setForeground(Color.BLACK);
+                getCode.setForeground(Color.white);
             }
         });
 
@@ -193,7 +193,7 @@ public class Register extends JFrame {
 
             @Override
             public void mouseExited(MouseEvent e) {
-                officialWebsite.setForeground(Color.BLACK);
+                officialWebsite.setForeground(Color.white);
 
             }
         });
