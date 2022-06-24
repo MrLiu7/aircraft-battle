@@ -41,6 +41,9 @@ public class GameUtils {
     //爆炸类集合
     public static List<ExplodeObj> explodeObjList = new ArrayList<>();
 
+    //验证码集合
+    public static List<String> codeList = new ArrayList<>();
+
     //绘制字符串的工具方法
     public static void drawWord(Graphics gImage,String str,Color color,int size,int x,int y){
         gImage.setColor(color);

@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="version 1.1">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/libs__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace_冲突文件_XiaoLiuPA_20220623021333.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/liujiji/database/JDBC/InsertDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/liujiji/database/JDBC/SearchDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/liujiji/index/Register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/liujiji/mail/SendEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/activation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/javax.mail.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/mysql-connector-java-5.1.49.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AircraftBattle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AircraftBattle.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/index/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/index/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/utils/GameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/utils/GameUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,14 +52,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/BaiduSyncdisk/AircraftBattle/src/com/liujiji/musicplayer",
+    "last_opened_file_path": "D:/BaiduSyncdisk/AircraftBattle/src/com/liujiji",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "库",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java"
   },
   "keyToStringList": {
@@ -55,15 +70,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\BaiduSyncdisk\AircraftBattle\src\com\liujiji" />
+      <recent name="D:\BaiduSyncdisk\AircraftBattle\src\libs" />
       <recent name="D:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\musicplayer" />
       <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src" />
       <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src\com\xf\imgs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\BaiduSyncdisk\AircraftBattle\src\libs" />
       <recent name="D:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\img" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.GameWin">
+  <component name="RunManager" selected="应用程序.Register">
     <configuration name="GameWin" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.liujiji.main.GameWin" />
       <module name="AircraftBattle" />
@@ -84,6 +102,32 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.xf.jf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Register" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liujiji.index.Register" />
+      <module name="AircraftBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liujiji.index.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchDatabase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liujiji.database.JDBC.SearchDatabase" />
+      <module name="AircraftBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liujiji.database.JDBC.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,10 +172,18 @@
     <list>
       <item itemvalue="应用程序.GameWin" />
       <item itemvalue="应用程序.com.liujiji.index.Login" />
+      <item itemvalue="应用程序.Register" />
+      <item itemvalue="应用程序.SearchDatabase" />
       <item itemvalue="应用程序.Login" />
       <item itemvalue="应用程序.com.xf.main.GameWin" />
       <item itemvalue="应用程序.test" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Register" />
+        <item itemvalue="应用程序.SearchDatabase" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -158,6 +210,8 @@
       <workItem from="1655921823003" duration="60000" />
       <workItem from="1655944006907" duration="17898000" />
       <workItem from="1655976603857" duration="291000" />
+      <workItem from="1655985312851" duration="630000" />
+      <workItem from="1656030359560" duration="11273000" />
     </task>
     <task id="LOCAL-00001" summary="初始化仓库">
       <created>1655692599640</created>
@@ -222,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655974383896</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="version 1.1">
+      <created>1655985342068</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1655985342068</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

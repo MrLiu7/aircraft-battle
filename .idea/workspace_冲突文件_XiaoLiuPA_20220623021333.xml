@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="加入不同飞机的照片" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2AoxABQOtUkuSs3EX1Z8ldNecPc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "G:/BaiduSyncdisk/AircraftBattle/src/com/liujiji/musicplayer",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\musicplayer" />
+      <recent name="G:\BaiduSyncdisk\AircraftBattle\src\com\liujiji" />
+      <recent name="G:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\test" />
+      <recent name="G:\BaiduSyncdisk\AircraftBattle\test\playerTest" />
+      <recent name="C:\xiaoliu\IdeaProjects\AircraftBattle\AircraftBattle\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\musicplayer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GameWin">
+    <configuration name="GameWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liujiji.main.GameWin" />
+      <module name="AircraftBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liujiji.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liujiji.index.Login" />
+      <module name="AircraftBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liujiji.index.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MusicPlay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liujiji.musicplayer.MusicPlay" />
+      <module name="AircraftBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liujiji.musicplayer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MusicTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="playerTest.MusicTest" />
+      <module name="AircraftBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="playerTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="playerTest.UI" />
+      <module name="AircraftBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="playerTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.GameWin" />
+      <item itemvalue="Application.Login" />
+      <item itemvalue="Application.MusicPlay" />
+      <item itemvalue="Application.MusicTest" />
+      <item itemvalue="Application.UI" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GameWin" />
+        <item itemvalue="Application.Login" />
+        <item itemvalue="Application.MusicPlay" />
+        <item itemvalue="Application.MusicTest" />
+        <item itemvalue="Application.UI" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="" />
+      <created>1655689597183</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655689597183</updated>
+      <workItem from="1655689599312" duration="3115000" />
+      <workItem from="1655693172620" duration="1599000" />
+      <workItem from="1655694801348" duration="13000" />
+      <workItem from="1655694828909" duration="132000" />
+      <workItem from="1655695216807" duration="793000" />
+      <workItem from="1655706734064" duration="7177000" />
+      <workItem from="1655715130942" duration="2646000" />
+      <workItem from="1655718185608" duration="3000" />
+      <workItem from="1655720145170" duration="374000" />
+      <workItem from="1655872068172" duration="38000" />
+      <workItem from="1655872123825" duration="1819000" />
+      <workItem from="1655873975750" duration="934000" />
+      <workItem from="1655874932535" duration="3517000" />
+      <workItem from="1655898617762" duration="617000" />
+      <workItem from="1655906033798" duration="14756000" />
+    </task>
+    <task id="LOCAL-00001" summary="初始化仓库">
+      <created>1655692599640</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655692599640</updated>
+    </task>
+    <task id="LOCAL-00002" summary="更新文件">
+      <created>1655816241669</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655816241669</updated>
+    </task>
+    <task id="LOCAL-00003" summary="基本完成">
+      <created>1655909107429</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655909107429</updated>
+    </task>
+    <task id="LOCAL-00004" summary="加入音乐播放功能">
+      <created>1655916250631</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655916250631</updated>
+    </task>
+    <task id="LOCAL-00005" summary="加入敌方普通飞机可以发射子弹">
+      <created>1655920155314</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655920155314</updated>
+    </task>
+    <task id="LOCAL-00006" summary="加入不同飞机的照片">
+      <created>1655921511754</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655921511754</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始化仓库" />
+    <MESSAGE value="更新文件" />
+    <MESSAGE value="基本完成" />
+    <MESSAGE value="加入音乐播放功能" />
+    <MESSAGE value="加入敌方普通飞机可以发射子弹" />
+    <MESSAGE value="加入不同飞机的照片" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入不同飞机的照片" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
