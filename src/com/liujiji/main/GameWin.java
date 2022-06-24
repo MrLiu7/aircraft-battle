@@ -56,10 +56,10 @@ public class GameWin extends JFrame implements Runnable {
     //记录游戏重绘次数（防止子弹重绘过快）初始化为 0
     public static int count = 1;
 
-    public static void main(String[] args) {
-        GameWin gameWin = new GameWin();
-        gameWin.lunch();
-    }
+    //public static void main(String[] args) {
+    //    GameWin gameWin = new GameWin();
+    //    gameWin.lunch();
+    //}
 
     //初始化需要添加的元素
     public void addFirst(){
@@ -232,6 +232,6 @@ public class GameWin extends JFrame implements Runnable {
 
     @Override
     public void run() {
-        new GameWin().lunch();
+        lunch();
     }
 }

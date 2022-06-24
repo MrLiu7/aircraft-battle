@@ -78,9 +78,9 @@ public class MusicPlay extends Thread {
         sourceDataLine.close();
     }
 
-    public static void main(String[] args) {
-        new MusicPlay().play();
-    }
+    //public static void main(String[] args) {
+    //    new MusicPlay().play();
+    //}
 
     @Override
     public void run() {

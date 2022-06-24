@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="登录功能可以上线">
+    <list default="true" id="759bdd2f-7dbf-433d-9a40-2cd34ac9b364" name="变更" comment="version 2.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/index/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/index/Register.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/liujiji/main/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/main/GameWin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/liujiji/main/MenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/main/MenuPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/liujiji/musicplayer/MusicPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/liujiji/musicplayer/MusicPlay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +67,7 @@
       <recent name="D:\BaiduSyncdisk\AircraftBattle\src\com\liujiji\img" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GameWin">
+  <component name="RunManager" selected="Application.com.liujiji.index.Login">
     <configuration name="GameWin" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.liujiji.main.GameWin" />
       <module name="AircraftBattle" />
@@ -251,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656047182288</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="version 2.0">
+      <created>1656049598977</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656049598977</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +284,8 @@
     <MESSAGE value="升级一些信息，做出控制面板" />
     <MESSAGE value="version 1.1" />
     <MESSAGE value="登录功能可以上线" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录功能可以上线" />
+    <MESSAGE value="version 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 2.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -288,6 +298,15 @@
           <url>file://$PROJECT_DIR$/src/com/xf/main/GameWin.java</url>
           <line>83</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/liujiji/index/Login.java</url>
+          <line>16</line>
+          <properties class="com.liujiji.index.Login" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

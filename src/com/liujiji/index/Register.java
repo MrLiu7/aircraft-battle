@@ -208,9 +208,9 @@ public class Register extends JFrame {
         panel.add(bgImg);
     }
 
-    public static void main(String[] args) {
-        new Register(null).register();
-    }
+    //public static void main(String[] args) {
+    //    new Register(null).register();
+    //}
 
     public void register() {
         //设置窗口可见

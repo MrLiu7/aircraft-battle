@@ -132,8 +132,4 @@ public class MenuPanel extends JFrame {
         this.setResizable(false);
         this.setVisible(true);
     }
-
-    public JPanel getPanel() {
-        return panel;
-    }
 }
