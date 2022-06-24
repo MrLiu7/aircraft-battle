@@ -1,5 +1,6 @@
 package com.liujiji.index;
 
+import com.liujiji.database.JDBC.SearchDatabase;
 import com.liujiji.main.GameWin;
 
 import javax.swing.*;
@@ -7,9 +8,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.Objects;
 
 public class Login extends JFrame {
@@ -30,7 +28,7 @@ public class Login extends JFrame {
         this.getContentPane().add(panel);
 
         //用户名
-        JLabel username = new JLabel("用户名");
+        JLabel username = new JLabel("邮箱");
         //密码
         JLabel password = new JLabel("密码");
         //设置用户名的位置和大小
@@ -57,8 +55,8 @@ public class Login extends JFrame {
 
         //注册标签
         JLabel register = new JLabel("没有账号，立即注册");
-        register.setFont(new Font("楷体",Font.BOLD,15));
-        register.setBounds(160,300,200,20);
+        register.setFont(new Font("楷体", Font.BOLD, 15));
+        register.setBounds(160, 300, 200, 20);
         register.setForeground(Color.BLACK);
 
 
@@ -73,7 +71,7 @@ public class Login extends JFrame {
         //设置背景
         JLabel bgImg = new JLabel();
         //bgImg.setIcon(new ImageIcon(Objects.requireNonNull(this.getClass().getResource("../img/bg2.jpg"))));
-        Image bg = new ImageIcon(Objects.requireNonNull(this.getClass().getResource("../img/bg2.png"))).getImage().getScaledInstance(500,400,Image.SCALE_DEFAULT);
+        Image bg = new ImageIcon(Objects.requireNonNull(this.getClass().getResource("../img/bg2.png"))).getImage().getScaledInstance(500, 400, Image.SCALE_DEFAULT);
         bgImg.setIcon(new ImageIcon(bg));
         bgImg.setBounds(0, 0, 500, 400);
         panel.add(bgImg);
@@ -86,15 +84,17 @@ public class Login extends JFrame {
                 String name = usernameField.getText();
                 String word = passwordField.getText();
                 //JOptionPane.showMessageDialog(null, "用户名：" + name + "\n密码：" + word, "登录信息", JOptionPane.NO_OPTION);
-                if (!name.equals("user")) {
-                    JOptionPane.showMessageDialog(null, "账号错误");
-                } else if (!word.equals("word")) {
-                    JOptionPane.showMessageDialog(null, "密码错误");
-                } else {
+                //查询数据库  查询邮箱
+                String sql = "SELECT * FROM user WHERE email='" + name + "' and password='"+word+"'";
+                boolean searchFlag = SearchDatabase.searchUser(sql);
+                System.out.println(searchFlag);
+                if (searchFlag) {
                     JOptionPane.showMessageDialog(null, "登陆成功");
                     //启动游戏界面
                     new Thread(new GameWin()).start();
                     that.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "账号错误或密码错误！");
                 }
             }
         });
@@ -105,13 +105,15 @@ public class Login extends JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 //CS端跳转BS端
-                Desktop desktop = Desktop.getDesktop();
+                /*Desktop desktop = Desktop.getDesktop();
                 try {
-                    desktop.browse(new URI("http://8.130.8.244/"));
+                    desktop.browse(new URI("http://8.130.8.244/register/register.html"));
                 } catch (IOException | URISyntaxException ex) {
                     throw new RuntimeException(ex);
-                }
+                }*/
                 //跳转登陆页面
+                new Register(that).register();
+                that.setVisible(false);
             }
 
             //鼠标移入

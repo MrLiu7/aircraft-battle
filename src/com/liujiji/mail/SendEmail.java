@@ -67,10 +67,32 @@ public class SendEmail {
         GameUtils.codeList.add(code.toString());
         try {
             SendEmail.send("验证码", code.toString(), email);
+            //启动多线程去删除集合中的数据
+            new RemoveCode(code.toString()).start();
             return true;
         } catch (MessagingException e) {
             //发生异常，抛出异常
             return false;
         }
+    }
+}
+
+class RemoveCode extends Thread{
+    String code;
+    public RemoveCode(String code){
+        this.code = code;
+    }
+    @Override
+    public void run() {
+        //验证码过期从集合中删除
+        for (int i = 60; i >= 0 ; i--) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        //移除
+        GameUtils.codeList.remove(code);
     }
 }

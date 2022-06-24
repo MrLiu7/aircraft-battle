@@ -10,13 +10,19 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Objects;
 
 public class Register extends JFrame {
     //获取验证码
     JLabel getCode = new JLabel("点击获取验证码");
+    Login login;
+    Register that = this;
 
-    public Register() {
+    public Register(Login login) {
+        this.login = login;
         //创建面板
         JPanel panel = new JPanel();
         //设置当前面板布局为空
@@ -97,9 +103,8 @@ public class Register extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 //点击注册
                 //页面效果
-                new Thread(new Son()).start();
                 //1、检测用户名是否存在
-                String sql = "SELECT * FROM user WHERE name=" + "'" + usernameField.getText() + "'";
+                String sql = "SELECT * FROM user WHERE email=" + "'" + emailField.getText() + "'";
                 boolean searchFlag = SearchDatabase.searchUser(sql);
                 //如果用户存在，那么不允许注册
                 if (searchFlag) {
@@ -115,15 +120,21 @@ public class Register extends JFrame {
                             break;
                         }
                     }
-                    //输入的验证码是否存在
-                    //if (rightCode) {
-                    if (true) {
+                    //输入的验证码存在
+                    if (rightCode) {
+                        //if (true) {
                         String name = usernameField.getText();
                         String password = passwordField.getText();
                         String email = emailField.getText();
                         //添加数据到数据库
                         String insertSql = "insert into user values ('" + name + "','" + password + "','" + email + "')";
                         InsertDatabase.insert(insertSql);
+                        //弹窗提示注册成功
+                        JOptionPane.showMessageDialog(null, "注册成功!" + "\n用户名：" + name + "\n邮箱：" + email + "\n您现在可以根据邮箱+密码登录", "注册结果", JOptionPane.INFORMATION_MESSAGE);
+                        //跳转到登录窗口
+                        login.setVisible(true);
+                        //隐藏自己
+                        that.setVisible(false);
                     } else {
                         //验证码错误
                         JOptionPane.showMessageDialog(null, "验证码 " + tempCode + " 不存在！", "验证码错误", JOptionPane.ERROR_MESSAGE);
@@ -145,6 +156,8 @@ public class Register extends JFrame {
                     JOptionPane.showMessageDialog(null, "发送成功，注意查收", "成功", JOptionPane.INFORMATION_MESSAGE);
                 }
 
+                //展示倒计时效果
+                new Son().start();
             }
 
             @Override
@@ -160,6 +173,31 @@ public class Register extends JFrame {
             }
         });
 
+        officialWebsite.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                Desktop desktop = Desktop.getDesktop();
+                try {
+                    desktop.browse(new URI("http://8.130.8.244/register/register.html"));
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                } catch (URISyntaxException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                officialWebsite.setForeground(Color.red);
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                officialWebsite.setForeground(Color.BLACK);
+
+            }
+        });
+
 
         //设置背景
         JLabel bgImg = new JLabel();
@@ -171,7 +209,7 @@ public class Register extends JFrame {
     }
 
     public static void main(String[] args) {
-        new Register().register();
+        new Register(null).register();
     }
 
     public void register() {
@@ -191,10 +229,15 @@ public class Register extends JFrame {
         this.setIconImage(image);
     }
 
+    //获取到自身
+    public Register getThat() {
+        return that;
+    }
+
     class Son extends Thread {
         @Override
         public void run() {
-            for (int i = 60; i >= 0 ; i--) {
+            for (int i = 60; i >= 0; i--) {
                 getCode.setText(i + "秒后重试");
                 try {
                     Thread.sleep(1000);
