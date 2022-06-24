@@ -146,8 +146,8 @@ public class GameWin extends JFrame implements Runnable {
         this.setLocationRelativeTo(null);
         //设置窗口标题
         this.setTitle("飞机大战");
-        //点击窗口×关闭程序
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        //点击关闭不执行任何操作
+        this.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         this.setIconImage(new ImageIcon(Objects.requireNonNull(this.getClass().getResource("../img/ep14.png"))).getImage());
 
         addFirst();

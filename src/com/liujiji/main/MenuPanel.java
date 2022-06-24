@@ -3,6 +3,7 @@ package com.liujiji.main;
 import com.liujiji.utils.GameUtils;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 
 public class MenuPanel extends JFrame {
@@ -24,6 +25,29 @@ public class MenuPanel extends JFrame {
         JButton start = new JButton("开始");
         //重玩按钮
         JButton playAgain = new JButton("重玩");
+        //退出游戏按钮
+        JButton exitGame = new JButton("退出");
+        //游戏设置按钮
+        JButton setting = new JButton("设置");
+
+        exitGame.addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //改变游戏状态
+                int tempState = GameWin.state;
+                if (tempState==1){
+                    GameWin.state = 2;
+                }
+                int choose = JOptionPane.showConfirmDialog(null, "您确定退出游戏吗？", "确认", JOptionPane.OK_CANCEL_OPTION);
+                if (choose==0){//确认退出
+                    System.exit(0);
+                }else {
+                    if (tempState==1){
+                        GameWin.state = 1;
+                    }
+                }
+            }
+        });
 
         //开始按钮监听
         start.addActionListener(new AbstractAction() {
@@ -79,12 +103,12 @@ public class MenuPanel extends JFrame {
                 GameUtils.bulletList.clear();
                 GameUtils.enemyBulletList.clear();
                 //刷屏次数归零
-                GameWin.count=0;
+                GameWin.count = 0;
                 //分数归零
-                GameWin.score=0;
+                GameWin.score = 0;
                 //敌方BOSS出场时机归零，血量拉满
                 gameWin.bossObj.life = 20;
-                GameWin.enemyCount=0;
+                GameWin.enemyCount = 0;
                 //添加必要的元素进入游戏所有元素的集合
                 gameWin.addFirst();
             }
@@ -94,10 +118,18 @@ public class MenuPanel extends JFrame {
         panel.add(start);
         panel.add(stopPlay);
         panel.add(playAgain);
-
+        panel.add(exitGame);
+        panel.add(setting);
         //frame的一些设置
         this.add(panel);
-        this.setBounds(GameWin.width * 2, GameWin.height / 3, 100, 300);
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        int w = dim.width;
+        int h = dim.height;
+        this.setBounds(w / 2 - 500 / 2, h / 2 + 650 / 2, 500, 100);
+        //点击关闭不执行任何操作
+        this.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
+        //设置窗口不可更改大小
+        this.setResizable(false);
         this.setVisible(true);
     }
 
