@@ -1,4 +1,5 @@
-package com.liujiji.mail;//发送消息类
+package com.liujiji.mail;
+//发送消息类
 //把发消息的代码 封装为一个类 使用的时候调用方法 传入邮件标题 邮件内容就可以了
 
 import com.liujiji.utils.GameUtils;
@@ -87,6 +88,7 @@ class RemoveCode extends Thread{
         //验证码过期从集合中删除
         for (int i = 60; i >= 0 ; i--) {
             try {
+                //休眠一秒
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
